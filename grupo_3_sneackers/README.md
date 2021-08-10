@@ -5,14 +5,14 @@ Nuestro e-commerce sera una plataforma destinada a la venta de calzados,tanto de
 
 --Referencias para nuestro e-commerce
 
-1 https://www.adidas.com.ar/ diseño de la pagina web
-2 https://www.tripstore.com.ar/ pagina multimarca con lo ultimo en tendencia
-3 https://www.sportfanatic.com.ar/ pagina multimarca con diseño claro,carrito de compras,barra de navegacion y busqueda
-4 https://plugmorestore.com/ diseño sencillo con productos destacados
-5 https://www.moovbydexter.com.ar/ estilo basico de diseño en su pagina web.
+https://www.adidas.com.ar/ diseño de la pagina web
+https://www.tripstore.com.ar/ pagina multimarca con lo ultimo en tendencia
+https://www.sportfanatic.com.ar/ pagina multimarca con diseño claro,carrito de compras,barra de navegacion y busqueda
+https://plugmorestore.com/ diseño sencillo con productos destacados
+https://www.moovbydexter.com.ar/ estilo basico de diseño en su pagina web.
 
 
 --Integrantes del equipo
 
 Ezequiel ganzero:
-1 comenzando en el mundo de la programación,cursando en digital house,con muchas ganas de aprender este enorme universo.
+comenzando en el mundo de la programación,cursando en digital house,con muchas ganas de aprender este enorme universo.
