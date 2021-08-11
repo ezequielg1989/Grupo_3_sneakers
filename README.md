@@ -22,3 +22,6 @@ Iniciando tambien en el mundo de la programación, atrasada pero con turbo
 
 #### Axel Garrido:
 Arrancando con muchas ganas en el mundo de la programacion de la mano de Digital House.
+
+#### Anael Torres:  
+Comenzando en este amplio mundo que es la programacion de la mano de Digital House.
