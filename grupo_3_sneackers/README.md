@@ -19,3 +19,6 @@ comenzando en el mundo de la programación,cursando en digital house,con muchas 
 
 Sol Bogado: 
 Iniciando tambien en el mundo de la programación, atrasada pero con turbo
+
+Axel Garrido:
+Arrancando con muchas ganas en el mundo de la programacion de la mano de Digital House.
