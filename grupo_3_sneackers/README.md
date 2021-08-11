@@ -16,3 +16,6 @@ https://www.moovbydexter.com.ar/ estilo basico de diseño en su pagina web.
 
 Ezequiel ganzero:
 comenzando en el mundo de la programación,cursando en digital house,con muchas ganas de aprender este enorme universo.
+
+Sol Bogado: 
+Iniciando tambien en el mundo de la programación, atrasada pero con turbo
