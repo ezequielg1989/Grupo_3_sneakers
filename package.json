@@ -1,0 +1,24 @@
+{
+  "name": "grupo3sneakers",
+  "version": "1.0.0",
+  "description": "Nuestro e-commerce sera una plataforma destinada a la venta de calzados,tanto deportivos,moda,casual o simplemente para el dia a dia,nuestro objetivo es apuntar a toda clase de publico que quiera marcar tendencia y estilo con los ultimos modelos lanzados por las marcas mas importantes del mundo,sea hombre,mujer,niño o adolescente,nuestro publico marcará tendencia.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezequielg1989/Grupo_3_sneakers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezequielg1989/Grupo_3_sneakers/issues"
+  },
+  "homepage": "https://github.com/ezequielg1989/Grupo_3_sneakers#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
