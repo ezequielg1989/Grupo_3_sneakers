@@ -14,8 +14,13 @@ app.get("/cart", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/cart.html"));
 });
 
+
+app.get("/details", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/details.html"));
+});
+
 const puerto = process.env.PORT || 3000
 
-app.listen(3000, () => {
+app.listen(puerto, () => {
   console.log(`Server is running on PORT : ${puerto}`);
 });
