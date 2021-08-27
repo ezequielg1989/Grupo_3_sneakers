@@ -1,3 +1,5 @@
+@import url(_cart.css);
+
 *{
     margin: 0;
     padding: 0;
@@ -69,48 +71,7 @@
 
 }
 
-section.cart{
-    width: 70%;
-    background:whitesmoke ;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'sans-serif';
-    color:black;
-    font-size: 1em;
-}
 
-section article.producto{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px;
-}
-
-section.envio{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px;
-    margin-top: 30px;
-    border-top: 1px solid black;
-    padding-top: 10px;
-}
-
-section.total{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px;
-}
-
-input[type=number] {
-    width: 40px;
- }
 
 /*=====================================
 Main details
