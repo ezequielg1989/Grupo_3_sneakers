@@ -13,6 +13,10 @@ app.get("/register", (req, res) => {
 app.get("/cart", (req, res) => {
   res.sendFile(path.join(__dirname, "./view/cart.html"));
 });
+app.get("/login", (req, res) => {
+  res.sendFile(path.join(__dirname, "./view/login.html"));
+});
+
 
 
 app.get("/details", (req, res) => {
@@ -24,3 +28,6 @@ const puerto = process.env.PORT || 3000
 app.listen(puerto, () => {
   console.log(`Server is running on PORT : ${puerto}`);
 });
+
+
+

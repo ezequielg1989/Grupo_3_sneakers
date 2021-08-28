@@ -77,6 +77,21 @@
 .registro-form .butoms:hover{
     background: #999;
 }
+ .butoms-facebook{
+    width: 100%;
+    background:white;
+    border-radius: 50px;
+    border-color:#3b5998;
+    padding: 12px;
+    color: #3b5998;
+    margin: 16px 0;
+    font-size: 30px;
+    cursor:pointer;
+ }
+ .butoms-facebook:hover{
+     background:#3b5998;
+     color: white;
+ }
 
 
 /*=====================================
