@@ -40,9 +40,12 @@
     padding:20px;
     border-radius: 50px;
     margin-bottom: 50px;
-    border:1px solid grey;
+    border:1px solid #999;
     font-family: 'calibri';
     font-size: 30px;
+}
+.datos:hover{
+    border-color: black;
 }
 
 .registro-form p{
@@ -67,10 +70,12 @@
   padding: 12px;
   color: white;
   margin: 16px 0;
-  font-size: 16px;
-
+  font-size: 30px;
+  cursor:pointer;
 }
-
+.registro-form .butoms:hover{
+    background: #999;
+}
 
 
 /*=====================================
