@@ -1,5 +1,6 @@
 @import url(_cart.css);
 @import url(_details.css);
+@import url(_index.css);
 
 *{
     margin: 0;
