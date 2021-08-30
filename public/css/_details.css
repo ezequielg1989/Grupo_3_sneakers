@@ -1,66 +1,10 @@
-
-/*=========================
-header
-==========================*/
-.box-header{
-    display: block;
-    width: 100%;
-    height: 45vh;
-    background-color: black;
-}
-.top-header{
-    display: flex;
-    padding-right: 11%;
-    justify-content: space-between;
-}
-
-.midle-header{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    top: -16%;
-   
-}
-
-.img-header{
-    width: 200px;
-    height: 200px;
-    filter: invert(1) sepia();
-    
-}
+@import url(styles.css);
 
 
-.low-header{
-    display: flex;
-    padding-left: 76%;
-    align-items: center;
-    margin-top: 10px;
-    position: relative;
-    top: -15%;
-}
-
-.low-header ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    display: none;
-    flex-wrap: nowrap;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 20px;  
-}
-
-.low-header ul li a{
-    color:white;
-    text-decoration: none;
-    transform: 0.4s;
- }
-
- .low-header ul li a:hover{
-     color:rgb(187, 182, 182)
- }
 
 
 .list-enlace ul{
+    
     display: flex;
     margin-top: 50px;
     margin-left: 20px;
@@ -177,71 +121,3 @@ hr{
 
 
 
-@media(min-width:480px){
-    .box-header{
-        height: 40vh;
-    }
-    .midle-header{
-        top:-22%
-    }
-    .low-header{
-        margin-top: 5px;
-        padding: 0%;
-        justify-content: space-around;
-        top: -21%;
-        right: 6%;
-    
-    }
-    .low-header ul{
-        display: flex;
-        flex-direction: row;
-    }
-    .low-header ul li{
-        margin: 9px 67px 0px 0px;
-        justify-content: space-around;
-    
-    }
-}
-@media(min-width:760px){
-    .box-header{
-        height: 35vh;
-    }
-
-    .top-header{
-        justify-content: space-between;
-        padding-right: 3%;
-    }
-
-    .midle-header{
-        top: -120px;
-        left: 10%;
-    }
-
-    .low-header{
-        justify-content: space-around;
-        right: -7%;
-        top: -100px;
-    }
-
-    .btn-header{
-        font-family: 'Bebas Neue', cursive;
-        background-color:white;
-        color:black;
-        font-size: 18px;
-        width: 80px;
-        height: 30px;
-        border-radius: 10%;
-        transition: 0.4s;
-    }
-    
-    .btn-header:hover{
-        color: rgb(92, 86, 86);
-    }
-
-}
-
-@media(min-width:1024px){
-    .box-header{
-        height: 30vh;
-    }
-}
