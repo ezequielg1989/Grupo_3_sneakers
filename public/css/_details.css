@@ -33,7 +33,6 @@ header
 .low-header{
     display: flex;
     padding-left: 76%;
-    
     align-items: center;
     margin-top: 10px;
     position: relative;
@@ -46,8 +45,19 @@ header
     list-style: none;
     display: none;
     flex-wrap: nowrap;
-    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;  
 }
+
+.low-header ul li a{
+    color:white;
+    text-decoration: none;
+    transform: 0.4s;
+ }
+
+ .low-header ul li a:hover{
+     color:rgb(187, 182, 182)
+ }
 
 
 .list-enlace ul{
@@ -56,12 +66,21 @@ header
     margin-left: 20px;
     flex-direction: row;
     list-style: none;
+    font-family: 'Bebas Neue', cursive;
+
 }
 
 
 
  .list-enlace ul li a{
     text-decoration: none;
+    color: black;
+    transition: 0.4s;
+ }
+
+ .list-enlace ul li a:hover{
+     color: rgb(80, 79, 79);
+
  }
 
  .box-central{
@@ -205,14 +224,20 @@ hr{
     }
 
     .btn-header{
-        font-family:serif;
-        background-color: darkgoldenrod;
-        color: crimson;
+        font-family: 'Bebas Neue', cursive;
+        background-color:white;
+        color:black;
         font-size: 18px;
         width: 80px;
         height: 30px;
         border-radius: 10%;
+        transition: 0.4s;
     }
+    
+    .btn-header:hover{
+        color: rgb(92, 86, 86);
+    }
+
 }
 
 @media(min-width:1024px){

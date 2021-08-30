@@ -12,6 +12,11 @@ index
 
 }
 
+.menu-left ul a{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+}
+
 .burger{
 
     padding-top: 7%;
@@ -24,12 +29,14 @@ index
     justify-content: space-around;
     list-style: none;
 }
+
 .box-product{
     margin-top: 20px;
     max-width: 300px;
     padding-top: 7px;
     transition: 0.4s;
 }
+
 .box-product img{
     max-width: 300px;
 }
@@ -87,7 +94,6 @@ index
       .top-main{
           display: flex;
           justify-content: space-around;
-          padding-top: %;
           flex-direction: row;
           
           
