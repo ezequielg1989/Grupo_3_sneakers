@@ -415,7 +415,7 @@ footer{
 
     .low-header{
         justify-content: space-around;
-        left: 12%;
+        left: 12.5%;
         top: -100px;
     }
 
@@ -440,7 +440,7 @@ footer{
 
 @media(min-width:1024px){
     .box-header{
-        height: 30vh;
+        height: 32vh;
     }
 
 
