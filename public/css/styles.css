@@ -94,6 +94,23 @@
      color: white;
  }
 
+ .butoms-google{
+    width: 100%;
+    background:white;
+    border-radius: 50px;
+    border-color:#EA4335;
+    padding: 12px;
+    color: #EA4335;
+    margin: 16px 0;
+    font-size: 30px;
+    cursor:pointer;
+ }
+
+ .butoms-google:hover{
+    background:#EA4335;
+    color: white;
+}
+
  /*====================================
  header
  ====================================*/
