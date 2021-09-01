@@ -1,112 +1,12 @@
 @import url(_cart.css);
 @import url(_details.css);
 @import url(_index.css);
+@import url(_login.css);
 
 *{
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-}
-.registro-form{
-    width: 50%;
-    background:whitesmoke ;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'sans-serif';
-    color:black;
-}
-.registro-form h1 {
-    font-size: 50px;
-    font-weight: 63px;
-    font-family: 'sans-serif';
-    margin-bottom: 40px;
-    text-align: center;
-    
-}
-.registro-form h2{
-
-  
-    font-family: 'sans-serif';
-    margin-bottom: 20px;
-    text-align: center; 
-    color: rgb(90, 90, 90);
-}
-.registro-form label{
-    margin-bottom: 20px;
-    color: rgb(90, 90, 90);
-}
-.datos {
-    width:100%;
-    padding:20px;
-    border-radius: 50px;
-    margin-bottom: 50px;
-    border:1px solid #999;
-    font-family: 'calibri';
-    font-size: 30px;
-}
-.datos:hover{
-    border-color: black;
-}
-
-.registro-form p{
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-}
-
-.registro-form a{
-    text-decoration: none;
-}
-.registro-form a:hover {
-    text-decoration: underline;
-}
-.registro-form .butoms {
-  width: 100%;
-  background: black;
-  border-radius: 50px;
-  border:none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 30px;
-  cursor:pointer;
-}
-.registro-form .butoms:hover{
-    background: #999;
-}
- .butoms-facebook{
-    width: 100%;
-    background:white;
-    border-radius: 50px;
-    border-color:#3b5998;
-    padding: 12px;
-    color: #3b5998;
-    margin: 16px 0;
-    font-size: 30px;
-    cursor:pointer;
- }
- .butoms-facebook:hover{
-     background:#3b5998;
-     color: white;
- }
-
- .butoms-google{
-    width: 100%;
-    background:white;
-    border-radius: 50px;
-    border-color:#EA4335;
-    padding: 12px;
-    color: #EA4335;
-    margin: 16px 0;
-    font-size: 30px;
-    cursor:pointer;
- }
-
- .butoms-google:hover{
-    background:#EA4335;
-    color: white;
 }
 
  /*====================================
