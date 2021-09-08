@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ezequielg1989/Grupo_3_sneakers#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }

@@ -89,6 +89,9 @@
 Main details
 =======================================*/
 
+.box-main{
+    width: 100%;
+}
  
 .list-enlace ul{
     display: flex;
