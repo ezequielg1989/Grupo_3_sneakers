@@ -25,3 +25,7 @@ Arrancando con muchas ganas en el mundo de la programacion de la mano de Digital
 
 #### Anael Torres:  
 Comenzando en este amplio mundo que es la programacion de la mano de Digital House.
+
+
+## feedback Sprint 1
+Solo no me agrado que no colocaran un footer en la home calificacion (10/10)
