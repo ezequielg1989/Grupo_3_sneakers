@@ -1,3 +1,4 @@
+
 <div class="box-product">
     <div class="product-top" id=<%=producto.idProducto%>>
       <h3><%= producto.nombreProducto%> </h3>
@@ -5,8 +6,12 @@
         <a href="details">Comprar</a>
       </button>
     </div>
-    <img src=<%=producto.imagenProducto%> 
+    <a href="details">
+      <img src=<%=producto.imagenProducto%> 
+
+    </a>
+    
     <p>
       <%=producto.descripcionProducto%>
     </p>
-  </div>
+</div>
