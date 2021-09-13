@@ -1,0 +1,24 @@
+
+
+.main-edit{
+    background-image: url("/images/add-edit-product/back-zapas.jpg");
+    background-size: 100%;
+}
+.box-addProduct{
+    opacity: 0.6;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.form-item{
+    
+    font-size: 30px;
+    color: rgb(5, 5, 5);
+    margin-top: 15px;
+}
+
+.btn-form{
+    border-radius: 10px;
+
+}

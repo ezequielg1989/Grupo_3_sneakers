@@ -13,5 +13,10 @@ router.get('/cart',controller.cart);
 
 router.get('/details',controller.details);
 
+router.get('/addProduct',controller.addEditForm);
+
+router.get('/editProduct',controller.addEditForm);
+
+
 
 module.exports = router;

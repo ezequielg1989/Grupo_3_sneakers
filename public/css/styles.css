@@ -2,7 +2,7 @@
 @import url(_details.css);
 @import url(_index.css);
 @import url(_login.css);
-
+@import url(_addProduct.css);
 *{
     margin: 0;
     padding: 0;

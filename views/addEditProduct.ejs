@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+
+<body class="main-edit">
+    <main >
+        <section>
+            <div class="box-addProduct">  
+                <div class="">
+                    <form action="#" method="POST" autocomplete="off">
+                        <h3 class="form-item">
+                            Editar Producto
+                        </h3>
+                        <div class="form-item">
+                            <label for="product-name">Nombre producto</label>
+                            <input type="text" name="product-name" placeholder="Nombre producto">
+                        </div>
+                        <div class="form-item">
+                            <label for="product-id">Id producto</label>
+                            <input type="text" name="product-id" placeholder="Id producto">
+                        </div>
+                        <div class="form-item addproduct-description">
+                            <label for="description">Descripción</label>
+                            <input type="text" name="description" placeholder="Descripción producto">
+                        </div>
+                        <div class="form-item">
+                            <label for="addimage">Imagen</label>
+                            <input type="file" name="addimage" class="is-input" accept=".jpg , .png" >
+                        </div>
+                        <div class="form-item">
+                            <label for="category">Categoría</label>
+                            <select name="category" id="">
+                                <option value="hombre">hombre</option>
+                                <option value="mujer">mujer</option>
+                                <option value="niñ@s">niñ@s</option>
+                            </select>
+                        </div>
+                        <div class="form-item">
+                            <label for="addprice"> Precio </label>
+                            <input type="text" name="addprice" class="is-input" placeholder="Precio">
+                        </div>
+                        <div class="form-item">
+                            <div>
+                                <button type="submit" class="btn-form">Agregar producto</button>
+                                <button type="submit" class="btn-form">Eliminar producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
