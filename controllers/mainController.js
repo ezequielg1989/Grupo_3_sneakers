@@ -14,11 +14,7 @@ let controller = {
   },
   details: (req, res) => {
     res.render("details.ejs");
-  },
-  addEditForm: (req,res) => {
-    res.render("addEditProduct.ejs")
-  },
-  
+  } 
 };
 
 module.exports = controller;

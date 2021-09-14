@@ -1,52 +1,52 @@
 [
     {
-      "idProducto": 1,
-      "nombreProducto": "nike force",
-      "precioProducto": 10000,
-      "imagenProducto":"images/imagenes-details/nike2.jpeg",
-      "descripcionProducto":"Conquista las dudas y haz una declaración con las Nike Air Force 1 Pixel, un estilo fuera de la cancha rediseñado hecho por y para mujeres. Su parte superior de cuero nítido presenta líneas limpias y texturas sutiles para una apariencia fresca que es fácil de diseñar. La suela y la entresuela distorsionadas tienen grandes detalles pixelados para un toque moderno, mientras que el nuevo logotipo y el diseño Swoosh invertido son un acto de audacia inquebrantable"
+      "id": 1,
+      "nombreProd": "nike force",
+      "precioProd": 10000,
+      "imagenProd":"images/imagenes-details/nike2.jpeg",
+      "descripcionProd":"Conquista las dudas y haz una declaración con las Nike Air Force 1 Pixel, un estilo fuera de la cancha rediseñado hecho por y para mujeres. Su parte superior de cuero nítido presenta líneas limpias y texturas sutiles para una apariencia fresca que es fácil de diseñar. La suela y la entresuela distorsionadas tienen grandes detalles pixelados para un toque moderno, mientras que el nuevo logotipo y el diseño Swoosh invertido son un acto de audacia inquebrantable"
     },
     {
-      "idProducto": 2,
-      "nombreProducto": "Puma Rs-X Mix",
-      "precioProducto": 9000,
-      "imagenProducto":"images/imagenes-details/puma1.jpeg",
-      "descripcionProducto":"Equipate con lo mejor de todos los mundos con nuestras zapatillas RS-X Mix, una incorporación a nuestra familia RS-X que incluye todas las innovaciones textiles más exitosas de las últimas cuatro temporadas.De esa forma, dejan la vara muy alta para darte un estilo audaz y una experiencia de comodidad que cualquier fanático del estilo urbano amará.La cómoda tecnología de amortiguación PUMA Running System celebra la reinvención de un momento y un movimiento cultural único."
+      "id": 2,
+      "nombreProd": "Puma Rs-X Mix",
+      "precioProd": 9000,
+      "imagenProd":"images/imagenes-details/puma1.jpeg",
+      "descripcionProd":"Equipate con lo mejor de todos los mundos con nuestras zapatillas RS-X Mix, una incorporación a nuestra familia RS-X que incluye todas las innovaciones textiles más exitosas de las últimas cuatro temporadas.De esa forma, dejan la vara muy alta para darte un estilo audaz y una experiencia de comodidad que cualquier fanático del estilo urbano amará.La cómoda tecnología de amortiguación PUMA Running System celebra la reinvención de un momento y un movimiento cultural único."
     },
     {
-      "idProducto": 3,
-      "nombreProducto": "Nike Air Force Black Crimson",
-      "precioProducto": 15000,
-      "imagenProducto":"images/imagenes-details/nike7.jpeg",
-      "descripcionProducto":"Las Zapatillas Nike Air Force 1 React te llevan a un nuevo mundo. Se fusionan el modelo icónico de Nike y el básquet con la tecnología Nike React para una comodidad total. La versión suprema en comodidad de la familia Air Force para que las uses todo el día."
+      "id": 3,
+      "nombreProd": "Nike Air Force Black Crimson",
+      "precioProd": 15000,
+      "imagenProd":"images/imagenes-details/nike7.jpeg",
+      "descripcionProd":"Las Zapatillas Nike Air Force 1 React te llevan a un nuevo mundo. Se fusionan el modelo icónico de Nike y el básquet con la tecnología Nike React para una comodidad total. La versión suprema en comodidad de la familia Air Force para que las uses todo el día."
     },
     {
-        "idProducto": 4,
-        "nombreProducto": "adidas U_Path Run",
-        "precioProducto": 13000,
-        "imagenProducto":"images/imagenes-details/adidas.jpeg",
-        "descripcionProducto":"Las zapatillas U_Path Run lucen un diseño innovador que combina lo clásico y lo moderno.Presentan un exterior de malla suave y transpirable, perfecta para tu día a día.El sistema de cordones exclusivo aporta un toque vanguardista a tu estilo, mientras que el refuerzo del talón con tirador te ofrece mayor estabilidad."
+        "id": 4,
+        "nombreProd": "adidas U_Path Run",
+        "precioProd": 13000,
+        "imagenProd":"images/imagenes-details/adidas.jpeg",
+        "descripcionProd":"Las zapatillas U_Path Run lucen un diseño innovador que combina lo clásico y lo moderno.Presentan un exterior de malla suave y transpirable, perfecta para tu día a día.El sistema de cordones exclusivo aporta un toque vanguardista a tu estilo, mientras que el refuerzo del talón con tirador te ofrece mayor estabilidad."
     },
     {
-        "idProducto": 5,
-        "nombreProducto": "Nike Air Max 270",
-        "precioProducto": 12000,
-        "imagenProducto":"images/imagenes-details/nike3.jpeg",
-        "descripcionProducto":"Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
+        "id": 5,
+        "nombreProd": "Nike Air Max 270",
+        "precioProd": 12000,
+        "imagenProd":"images/imagenes-details/nike3.jpeg",
+        "descripcionProd":"Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
     },
     {
-        "idProducto": 6,
-        "nombreProducto": "Fila Jogger",
-        "precioProducto": 8000,
-        "imagenProducto":"images/imagenes-details/nike9.jpeg",
-        "descripcionProducto":"Las zapatillas Fila Fore Jogger están confeccionadas en poliéster y materiales que las hacen resistentes y duraderas para todo tipo de uso. Su diseño se inspira en líneas deportivas y colores rústicos para dar como resultado un look urbano fácil de combinar con tus outfits. La suela de goma te ofrece la tracción necesaria sobre la superficie mientras que el ajuste con sistema de cordones te brinda el control personalizado."
+        "id": 6,
+        "nombreProd": "Fila Jogger",
+        "precioProd": 8000,
+        "imagenProd":"images/imagenes-details/nike9.jpeg",
+        "descripcionProd":"Las zapatillas Fila Fore Jogger están confeccionadas en poliéster y materiales que las hacen resistentes y duraderas para todo tipo de uso. Su diseño se inspira en líneas deportivas y colores rústicos para dar como resultado un look urbano fácil de combinar con tus outfits. La suela de goma te ofrece la tracción necesaria sobre la superficie mientras que el ajuste con sistema de cordones te brinda el control personalizado."
     },
     {
-        "idProducto": 7,
-        "nombreProducto": "Nike Air Max 90",
-        "precioProducto": 18000,
-        "imagenProducto":"images/imagenes-details/nike2.jpeg",
-        "descripcionProducto":"Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
+        "id": 7,
+        "nombreProd": "Nike Air Max 90",
+        "precioProd": 18000,
+        "imagenProd":"images/imagenes-details/nike2.jpeg",
+        "descripcionProd":"Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
       }
 
   ]

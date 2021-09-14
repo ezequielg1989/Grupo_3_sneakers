@@ -44,6 +44,15 @@
     
 }
 
+.carousel-details {
+    width: 100%;
+}
+
+.carousel-slide-details{
+    width: 46%;
+    margin-left: 5%;
+}
+
 .button-carrito{
     font-size: 20px;
     color: white;

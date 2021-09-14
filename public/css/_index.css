@@ -38,6 +38,16 @@ index
     transition: 0.4s;
 }
 
+.box-product a {
+    text-decoration: none;
+    color:black;
+}
+
+.box-product a:active {
+    text-decoration: none;
+    color:black;
+}
+
 .box-product img{
     max-width: 300px;
 }

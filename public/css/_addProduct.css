@@ -5,10 +5,14 @@
     background-size: 100%;
 }
 .box-addProduct{
-    opacity: 0.6;
+    opacity: 0.8;
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+
+.box-addProduct a{
+    text-decoration: brown;
 }
 
 .form-item{

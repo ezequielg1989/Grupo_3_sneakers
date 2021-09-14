@@ -1,7 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const routesMain = require('./routes/main.routes')
+const routesMain = require('./routes/main.routes');
+const routesAdmin = require('./routes/admin.routes')
 const PORT = process.env.PORT || 3000 ;
 
 
@@ -15,6 +16,8 @@ app.listen(PORT, () => {
 });
 
 app.use('/',routesMain);
+app.use('/',routesAdmin);
+
 
 app.use((req,res,next)=>{
   res.status(404).render('not-found');
