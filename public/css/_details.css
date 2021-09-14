@@ -104,6 +104,10 @@
     margin-bottom: 20px;
 }
 
+.box-description p{
+    color: black;
+}
+
 .box-description-2{
     display: flex;
     margin-left: 30px;
