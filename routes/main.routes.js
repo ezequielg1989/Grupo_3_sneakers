@@ -11,7 +11,8 @@ router.get('/login',controller.login);
 
 router.get('/cart',controller.cart);
 
-router.get('/details',controller.details);
+router.get('/:id', controller.product);
+
 
 
 

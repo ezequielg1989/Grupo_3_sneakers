@@ -13,8 +13,11 @@ let controller = {
     res.render("cart.ejs");
   },
   details: (req, res) => {
-    res.render("details.ejs");
-  } 
+    res.render("details.ejs",{productos:db});
+  },
+  product: (req, res) => {
+    res.render("details.ejs", { producto: db.find((prod) => prod.id == req.params.id) });
+},
 };
 
 module.exports = controller;

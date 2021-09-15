@@ -57,7 +57,7 @@
     <div class="products-list">
       <ul>
           <% productos.forEach(function(producto){ %>
-            <%- include('partials/product.ejs',{producto}) %>
+            <%- include('partials/product.ejs',{producto:producto}) %>
           <% }); %>
       </ul>
     </div>
