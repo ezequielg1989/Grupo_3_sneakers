@@ -29,3 +29,8 @@ Comenzando en este amplio mundo que es la programacion de la mano de Digital Hou
 
 ## feedback Sprint 1
 Solo no me agrado que no colocaran un footer en la home calificacion (10/10)
+
+
+## Feedback Sprint 2
+- Muchachos aunque tienen los items que exije el sprint , las vistas responsive estan mal optimizadas , sobre todo el login y el register , trabajen mas esa parte por favor  .
+- calificacion (7/10)
