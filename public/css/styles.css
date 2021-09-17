@@ -3,6 +3,7 @@
 @import url(_index.css);
 @import url(_login.css);
 @import url(_addProduct.css);
+@import url(_register.css);
 *{
     margin: 0;
     padding: 0;

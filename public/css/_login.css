@@ -1,95 +1,81 @@
 @import url(styles.css);
-/*================
-login
-================*/
 
 
-.registro-form{
+
+.formLogin{
+    background-color: whitesmoke;
+    position: relative;
+    top: 10px;
+    display: flex;
+    margin: 0 auto;
     width: 50%;
-    background:whitesmoke ;
-    padding: 30px;
-    margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: 'sans-serif';
-    color:black;
+    height: 100%;
+    border-radius: 10px;
+    border-width: 0.1px;
+    border-style: solid;
+    border-color: rgba(245, 245, 245, 0.11);
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 8px 20px 0 rgba(0, 0, 0, 0.3);
 }
-.registro-form h1 {
-    font-size: 50px;
-    font-weight: 63px;
-    font-family: 'sans-serif';
-    margin-bottom: 40px;
+
+.formLogin form{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+    padding: 0 8px 0 10px;
     text-align: center;
-    
-}
-.registro-form h2{
-
-  
-    font-family: 'sans-serif';
-    margin-bottom: 20px;
-    text-align: center; 
-    color: rgb(90, 90, 90);
-}
-.registro-form label{
-    margin-bottom: 20px;
-    color: rgb(90, 90, 90);
-}
-.datos {
-    width:100%;
-    padding:20px;
-    border-radius: 50px;
-    margin-bottom: 50px;
-    border:1px solid #999;
-    font-family: 'calibri';
-    font-size: 30px;
-}
-.datos:hover{
-    border-color: black;
+    margin: 0 auto;
 }
 
-.registro-form p{
-    height: 40px;
+.formLogin form div label{
+  color: black;
+}
+
+
+.formLogin button {
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    border-style: none;
+    padding: 8px 25px 8px 25px;
+    margin: 5px 10px 0 10px;
+    font-size: 14px;
     text-align: center;
-    font-size: 18px;
-}
+  }
 
-.registro-form a{
-    text-decoration: none;
-}
-.registro-form a:hover {
-    text-decoration: underline;
-}
-.registro-form .butoms {
-  width: 100%;
-  background: black;
-  border-radius: 50px;
-  border:none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 30px;
-  cursor:pointer;
-}
-.registro-form .butoms:hover{
-    background: #999;
-}
- .butoms-facebook{
+  .formLogin button:hover {
+    background-color: #5f5f5f;
+    color: white;
+  }
+
+  .loginBotonTipo2{
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    border-style: none;
+    padding: 6px 20px 6px 20px;
+    margin: 0 auto;
+    font-size: 10px;
+    text-align: center;
+    background-color: #bfdbf7;
+    color: rgb(63, 63, 63);
+  }
+
+  .formLogin input {
+    border-radius: 12px;
+    border-color: #c7c7c7;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 0 0 15px 0;
+    padding: 9px 0 9px 0;
+    text-align: center;
     width: 100%;
-    background:white;
-    border-radius: 50px;
-    border-color:#3b5998;
-    padding: 12px;
-    color: #3b5998;
-    margin: 16px 0;
-    font-size: 30px;
-    cursor:pointer;
- }
- .butoms-facebook:hover{
-     background:#3b5998;
-     color: white;
- }
+  }
 
- .butoms-google{
+ 
+ 
+  .terminosLogin a{
+    color:black;
+    font-size: 20px;
+  }
+  .butoms-google{
     width: 100%;
     background:white;
     border-radius: 50px;
@@ -97,7 +83,6 @@ login
     padding: 12px;
     color: #EA4335;
     margin: 16px 0;
-    font-size: 30px;
     cursor:pointer;
  }
 
@@ -105,3 +90,18 @@ login
     background:#EA4335;
     color: white;
 }
+.butoms-facebook{
+    width: 100%;
+    background:white;
+    border-radius: 50px;
+    border-color:#3b5998;
+    padding: 12px;
+    color: #3b5998;
+    margin: 16px 0;
+    cursor:pointer;
+ }
+ .butoms-facebook:hover{
+     background:#3b5998;
+     color: white;
+ }
+

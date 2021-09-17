@@ -8,23 +8,41 @@
 
   <%- include('partials/header') %>
 
-  <main class="registro-form">
-    <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-    <h1>Iniciar sesión</h1>
-    <input class='butoms-facebook' type='submit' value='Facebook Login'>
-    <input class='butoms-google' type='submit' value='Google Login'>
-    <label>Email</label>
-    <input class='datos' type='email' name='correo' id='correo'>
-
-    <label>Contraseña</label>
-    <input class='datos' type='password' name='correo' id='correo'>
-
-    <input class='butoms' type='submit' value='Inicia sesion'>
-
-    <p>¿No tenes cuenta aun?<a href='./register'>Crear cuenta</a> </p>
-
-
-  </main>
+  <main>
+    <div class="formLogin">
+        <form>
+            
+            <div>
+              <h2>Iniciar sesión</h2>
+              <div>
+              <input class='butoms-facebook' type='submit' value='Facebook Login'>
+              <input class='butoms-google' type='submit' value='Google Login'>
+            </div>
+                <label>Usuario</label>
+            </div>
+            <div>
+                <input type="text" name="username" placeholder="fulanito" minlength="7" maxlength="10">
+            </div>
+            <div>
+                <label>Contraseña</label>
+            </div>
+            <div>
+                <input type="password" name="password" minlength="7" maxlength="10">
+            </div>
+            <div>
+                <button type="reset" class="loginBotonTipo1">Borrar</button>
+                <button type="submit" class="loginBotonTipo1">Continuar</button>
+            </div>
+            <div>
+                <a href="./register"><button type= "button" class="loginBotonTipo2">Registrarse</button></a>
+            </div>
+            <div class="terminosLogin">
+                <a href="#">Términos y condiciones</a>
+                <a href="./"> - Volver al sitio</a>
+            </div>
+        </form>
+    </div>
+</main>
   <%- include('partials/footer') %>
 
 

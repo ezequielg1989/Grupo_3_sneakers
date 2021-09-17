@@ -7,23 +7,51 @@
 <body>
   <%- include('partials/header') %>
 
-  <main class='registro-form'>
-    <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-    <h1>Crear cuenta</h1>
-    <h2>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h2>
-    <input class='butoms-facebook' type='submit' value='Facebook Login'>
-    <input class='butoms-google' type='submit' value='Google Login'>
-    <label>Nombre y apelldio</label>
-    <input class='datos' type='text' name='nombres' id='nombres' placeholder='ej: Anael Torres'>
-    <label>Email</label>
-    <input class='datos' type='email' name='correo' id='correo' placeholder='ej: sneakers@gmail.com'>
-    <label>Telefono (opcional)</label>
-    <input class='datos' type='text' name='telefono' id='telefono' placeholder='ej: 1133228700'>
-    <label>Contraseña</label>
-    <input class='datos' type='password' name='correo' id='correo' placeholder='Ingresa su contraseña'>
-    <input class='butoms' type='submit' value='Registrar'>
-    <p>¿Ya tenes una cuenta?<a href='./login'>Inicia sesion</a> </p>
-  </main>
+  <main>
+    
+    <div class = "formRegister">
+        <form>
+            <div>
+              <h2>Registrarse</h2>
+          
+            </div>
+            <div>
+                <label> Correo Electronico</label> 
+            </div>
+            <div> 
+                <input type="text" name="email" placeholder="anael@gmail.com">
+            </div>
+            <div>
+                <label> Usuario </label>
+            </div>
+            <div>
+                <input type="text" name="username" placeholder="fulanito" minlength="7" maxlength="10">
+            </div>
+            <div>
+                <label> Contraseña </label>
+            </div>
+            <div>
+                <input type= "text" name="password" minlength="7" maxlength="10">
+            </div>
+            <div>
+                <label> Repetir contraseña </label>
+            </div>
+            <div>
+                <input type= "text" name="password" minlength="7" maxlength="10">
+            </div>
+            <div>
+                <button type="reset"> Borrar</button>
+            </div>
+            <div>
+                <button type="submit"> Crear Usuario </button>
+            </div>
+            <div class = "terminosLogin">
+                <a href="#"> Términos y Condiciones </a>
+                <a href="#"> - Volver al Sitio </a>
+            </div>
+        </form>
+    </div>
+</main>
   <%- include('partials/footer') %>
 
 
