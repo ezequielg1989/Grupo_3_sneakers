@@ -1,43 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-    <%- include('partials/head') %>
+<%- include('partials/head.ejs') %>
 
 <body class="main-edit">
     <main >
         <section>
             <div class="box-addProduct">  
-                <div class="">
-                    <form action="#" method="POST" autocomplete="off">
+                <form action="/admin/addProd" method="POST" enctype="multipart/form-data">
                         <h3 class="form-item">
                             Nuevo Producto
                         </h3>
                         <div class="form-item">
-                            <label for="newName">Nombre producto</label>
-                            <input type="text" name="newName" placeholder="Nombre producto">
-                        </div>
-                        <div class="form-item">
-                            <label for="newId">Id producto</label>
-                            <input type="text" name="newId" placeholder="Id producto">
+                            <label>Nombre producto</label>
+                            <input type="text" name="Name" placeholder="Nombre producto">
                         </div>
                         <div class="form-item addproduct-description">
-                            <label for="newDescripcion">Descripción</label>
-                            <input type="text" name="newDescripcion" placeholder="Descripción producto">
+                            <label>Descripción</label>
+                            <input type="text" name="Descripcion" placeholder="Descripción producto">
                         </div>
                         <div class="form-item">
-                            <label for="newImage">Imagen</label>
-                            <input type="file" name="newImage" class="is-input" accept=".jpg , .png" >
+                            <label>Imagen</label>
+                            <input type="file" name="Image" class="is-input" accept=".jpg , .png" >
                         </div>
                         <div class="form-item">
-                            <label for="newPrecio"> Precio </label>
-                            <input type="text" name="newPrecio" class="is-input" placeholder="Precio">
+                            <label> Precio </label>
+                            <input type="text" name="Precio" class="is-input" placeholder="Precio">
                         </div>
                         <div class="form-item">
                             <div>
                                 <button type="submit" class="btn-form">Agregar producto</button>
                             </div>
                         </div>
-                    </form>
-                </div>
+                </form>
             </div>
         </section>
     </main>

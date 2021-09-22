@@ -16,7 +16,7 @@ app.listen(PORT, () => {
 });
 
 app.use('/',routesMain);
-app.use('/',routesAdmin);
+app.use('/admin',routesAdmin);
 
 
 app.use((req,res,next)=>{
