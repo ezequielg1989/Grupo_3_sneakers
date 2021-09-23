@@ -1,4 +1,4 @@
-const dbNew = require('../dataBase/newProd.json');
+const db = require('../dataBase/producto.json');
 const { v4: uuidv4 } = require('uuid');
 const fs = require("fs");
 const path = require("path");
@@ -10,23 +10,23 @@ let controller = {
 
     newProd: (req, res) => {
     const archivo = req.file;
-    const { Name, Descripcion,Precio, } = req.body;
+    const { nombreProd, descripcionProd,precioProd, } = req.body;
 
 
     const prod = {
     id: uuidv4(),
-    nombre:Name,
-    descripcion: Descripcion,
-    precio:Precio,
-    image: `img/${archivo.filename}`,
+    nombreProd:nombreProd,
+    descripcionProd: descripcionProd,
+    precioProd:precioProd,
+    imagenProd: `images/imagenes-details/${archivo.filename}`,
 
     };
-    dbNew.push(prod);
-    fs.writeFileSync(path.join(__dirname,"../dataBase/newProd.json"), JSON.stringify(dbNew, null, 4), {
+    db.push(prod);
+    fs.writeFileSync(path.join(__dirname,"../dataBase/producto.json"), JSON.stringify(db, null, 4), {
     encoding: "utf8",
     });
 
-    res.redirect("/admin/addProd");
+    res.redirect("/"),{producto:db};
     },
 
 
