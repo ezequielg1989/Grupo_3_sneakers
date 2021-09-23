@@ -1,17 +1,18 @@
-
 <div class="box-product">
-    <div class="product-top">
-      <h3><%- producto.nombreProd %></h3>
-      <button class="bottom-product">
-        <a href="/<%- producto.id %> ">Comprar</a>
-      </button>
-    </div>
-    <a href="/<%- producto.id %> ">
-      <img src="<%- producto.imagenProd %> "> 
+  <div class="product-top">
+    <h3>
+      <%- producto.nombreProd %>
+    </h3>
+    <button class="bottom-product">
+      <a href="/<%- producto.id %> ">Comprar</a>
+    </button>
+  </div>
+  <a href="/<%- producto.id %> ">
+    <img src="<%- producto.imagenProd %> ">
 
-    </a>
-    
-    <p>
-      <%- producto.descripcionProd %>
-    </p>
+  </a>
+
+  <p>
+    <%- producto.descripcionProd %>
+  </p>
 </div>

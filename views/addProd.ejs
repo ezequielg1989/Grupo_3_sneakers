@@ -1,10 +1,10 @@
 <%- include('partials/head.ejs') %>
 
-<body class="main-edit">
-    <main >
-        <section>
-            <div class="box-addProduct">  
-                <form action="/admin/addProd" method="POST" enctype="multipart/form-data">
+    <body class="main-edit">
+        <main>
+            <section>
+                <div class="box-addProduct">
+                    <form action="/admin/addProd" method="POST" enctype="multipart/form-data">
                         <h3 class="form-item">
                             Nuevo Producto
                         </h3>
@@ -18,7 +18,7 @@
                         </div>
                         <div class="form-item">
                             <label>Imagen</label>
-                            <input type="file" name="imagenProd" class="is-input" accept=".jpg , .png" >
+                            <input type="file" name="imagenProd" class="is-input" accept=".jpg , .png">
                         </div>
                         <div class="form-item">
                             <label> Precio </label>
@@ -29,9 +29,10 @@
                                 <button type="submit" class="btn-form">Agregar producto</button>
                             </div>
                         </div>
-                </form>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    </html>

@@ -2,126 +2,131 @@
 <html lang="en">
 
 <%- include('partials/head') %>
-<body>
-  <%- include('partials/header') %>
 
-  <main>
-    <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
-    <div class="list-enlace">
-      <ul>
-        <li>
-          <a href="">zapatillas > </a>
-        </li>
-        <li>
-          <a href="">nike</a>
-        </li>
-      </ul>
-    </div>
-    <div class="box-central">
-      <div class="img-prod">
-        <img src="<%- producto.imagenProd %>">
-      </div>
-      <div class="box-detail">
-        <div class="detail">
-          <h2><%- producto.nombreProd %></h2>
-        </div>
-        <div class="detail">
-          <h3 class="price">20.000</h3>
-          <h2><%- producto.precioProd %></h2>
-        </div>
-        <div class="detail">
-          <i class="far fa-credit-card">12 cuotas sin interes</i>
-        </div>
-        <div>
-          <i class="fas fa-money-bill">10% de descuento abonando en efectivo</i>
-        </div>
-        <div class="detail">
-          <hr />
-        </div>
-        <div class="detail">Talle
-          <select class="talle" name="talle" id="">
-            <option value="34">34</option>
-            <option value="35">35</option>
-            <option value="36">36</option>
-            <option value="37">37</option>
-            <option value="38">38</option>
-            <option value="39">39</option>
-          </select>
-        </div>
-        <div class="detail">Cantidad
-          <select class="cantidad" name="cantidad" id="">
-            <option value="1">1</option>
-            <option value="3">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-        </div>
-        <div class="detail">
-        </div>
-        <div class="detail">
-          <a href="cart">
-            <button  class="button-carrito">agregar a carrito</button>
-          </a>
-          
-        </div>
-      </div>
-    </div>
-        
-      
-      
-    </div>
-    <hr />
-    <div class="descripcion-titulo">
-      <h2>Detalle del producto</h2>
-    </div>
-    <div class="box-description">
-      <p>
-        <%- producto.descripcionProd %>
-      </p>
-    </div>
-    <div class="box-description-2">
-      <div class="detalle-1">
-        <p>
-          Género: Hombre.
-        </p>
-        <p>
-          Adecuado para: Todo el día
-        </p>
-        <p>
-          Material: Sintético
-        </p>
-        <p>
-          Beneficios: Durabilidad
-        </p>
-        <p>
-          Caña: Baja
-        </p>
-      </div>
-      <div class="detalle-2">
-        <p>
-          Ajuste: Con Cordones
-        </p>
-        <p>
-          Importante: El peso del calzado puede variar según el
-          número solicitado. Los talles corresponden a numeración de Argentina
-        </p>
-        <p>
-          Garantía: Contra defecto de fabricación
-        </p>
-        <p>
-          Origen: Importado
-        </p>
-        <p>
-          Marca:Nike
-        </p>
-      </div>
-    </div>
-    <hr />
-  </main>
-  <%- include('partials/footer') %>
+  <body>
+    <%- include('partials/header') %>
 
-</body>
+      <main>
+        <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <div class="list-enlace">
+          <ul>
+            <li>
+              <a href="">zapatillas > </a>
+            </li>
+            <li>
+              <a href="">nike</a>
+            </li>
+          </ul>
+        </div>
+        <div class="box-central">
+          <div class="img-prod">
+            <img src="<%- producto.imagenProd %>">
+          </div>
+          <div class="box-detail">
+            <div class="detail">
+              <h2>
+                <%- producto.nombreProd %>
+              </h2>
+            </div>
+            <div class="detail">
+              <h3 class="price">20.000</h3>
+              <h2>
+                <%- producto.precioProd %>
+              </h2>
+            </div>
+            <div class="detail">
+              <i class="far fa-credit-card">12 cuotas sin interes</i>
+            </div>
+            <div>
+              <i class="fas fa-money-bill">10% de descuento abonando en efectivo</i>
+            </div>
+            <div class="detail">
+              <hr />
+            </div>
+            <div class="detail">Talle
+              <select class="talle" name="talle" id="">
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+              </select>
+            </div>
+            <div class="detail">Cantidad
+              <select class="cantidad" name="cantidad" id="">
+                <option value="1">1</option>
+                <option value="3">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+            <div class="detail">
+            </div>
+            <div class="detail">
+              <a href="cart">
+                <button class="button-carrito">agregar a carrito</button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        </div>
+        <hr />
+        <div class="descripcion-titulo">
+          <h2>Detalle del producto</h2>
+        </div>
+        <div class="box-description">
+          <p>
+            <%- producto.descripcionProd %>
+          </p>
+        </div>
+        <div class="box-description-2">
+          <div class="detalle-1">
+            <p>
+              Género: Hombre.
+            </p>
+            <p>
+              Adecuado para: Todo el día
+            </p>
+            <p>
+              Material: Sintético
+            </p>
+            <p>
+              Beneficios: Durabilidad
+            </p>
+            <p>
+              Caña: Baja
+            </p>
+          </div>
+          <div class="detalle-2">
+            <p>
+              Ajuste: Con Cordones
+            </p>
+            <p>
+              Importante: El peso del calzado puede variar según el
+              número solicitado. Los talles corresponden a numeración de Argentina
+            </p>
+            <p>
+              Garantía: Contra defecto de fabricación
+            </p>
+            <p>
+              Origen: Importado
+            </p>
+            <p>
+              Marca:Nike
+            </p>
+          </div>
+        </div>
+        <hr />
+      </main>
+      <%- include('partials/footer') %>
+
+  </body>
 
 </html>

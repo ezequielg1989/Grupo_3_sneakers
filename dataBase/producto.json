@@ -47,12 +47,5 @@
         "precioProd": 18000,
         "imagenProd": "images/imagenes-details/nike2.jpeg",
         "descripcionProd": "Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
-    },
-    {
-        "id": "0207c0d4-cc73-40f4-816a-22311bb06157",
-        "nombreProd": "nike shadow",
-        "descripcionProd": "Las Zapatillas Nike Air Force 1 Shadow rinde homenaje a las mujeres que están dando el ejemplo a la siguiente generación, al ser una combinación de fuerza, coraje, estilo y responsabilidad. Confeccionadas en cuero y gamuza, tienen una suela de goma con tecnología Air Max, aportando amortiguación, estabilidad y confianza.",
-        "precioProd": "22000",
-        "imagenProd": "images/imagenes-details/imagenProd-1632407039130-344923858nike-shadow.jpg"
     }
 ]

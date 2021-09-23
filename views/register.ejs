@@ -4,57 +4,57 @@
 <%- include('partials/head') %>
 
 
-<body>
-  <%- include('partials/header') %>
+    <body>
+        <%- include('partials/header') %>
 
-  <main>
-    
-    <div class = "formRegister">
-        <form>
-            <div>
-              <h2>Registrarse</h2>
-          
-            </div>
-            <div>
-                <label> Correo Electronico</label> 
-            </div>
-            <div> 
-                <input type="text" name="email" placeholder="anael@gmail.com">
-            </div>
-            <div>
-                <label> Usuario </label>
-            </div>
-            <div>
-                <input type="text" name="username" placeholder="fulanito" minlength="7" maxlength="10">
-            </div>
-            <div>
-                <label> Contraseña </label>
-            </div>
-            <div>
-                <input type= "text" name="password" minlength="7" maxlength="10">
-            </div>
-            <div>
-                <label> Repetir contraseña </label>
-            </div>
-            <div>
-                <input type= "text" name="password" minlength="7" maxlength="10">
-            </div>
-            <div>
-                <button type="reset"> Borrar</button>
-            </div>
-            <div>
-                <button type="submit"> Crear Usuario </button>
-            </div>
-            <div class = "terminosLogin">
-                <a href="#"> Términos y Condiciones </a>
-                <a href="#"> - Volver al Sitio </a>
-            </div>
-        </form>
-    </div>
-</main>
-  <%- include('partials/footer') %>
+            <main>
+
+                <div class="formRegister">
+                    <form>
+                        <div>
+                            <h2>Registrarse</h2>
+
+                        </div>
+                        <div>
+                            <label> Correo Electronico</label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" placeholder="anael@gmail.com">
+                        </div>
+                        <div>
+                            <label> Usuario </label>
+                        </div>
+                        <div>
+                            <input type="text" name="username" placeholder="Fulanito" minlength="7" maxlength="10">
+                        </div>
+                        <div>
+                            <label> Contraseña </label>
+                        </div>
+                        <div>
+                            <input type="text" name="password" minlength="7" maxlength="10">
+                        </div>
+                        <div>
+                            <label> Repetir contraseña </label>
+                        </div>
+                        <div>
+                            <input type="text" name="password" minlength="7" maxlength="10">
+                        </div>
+                        <div>
+                            <button type="reset"> Borrar</button>
+                        </div>
+                        <div>
+                            <button type="submit"> Crear Usuario </button>
+                        </div>
+                        <div class="terminosLogin">
+                            <a href="#"> Términos y Condiciones </a>
+                            <a href="#"> - Volver al Sitio </a>
+                        </div>
+                    </form>
+                </div>
+            </main>
+            <%- include('partials/footer') %>
 
 
-</body>
+    </body>
 
 </html>
