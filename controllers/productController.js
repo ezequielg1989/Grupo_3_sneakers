@@ -29,7 +29,35 @@ let controller = {
     res.redirect("/"),{producto:db};
     },
 
+    getEdit: (req, res) => {
+        const id = req.params.id;
+        const prod = db.find((item) => item.id === id);
+        res.render("editProd", { producto:prod });
+      },
 
-}
+    editProd: (req, res) => {
+        const id = req.params.id;
+        const archivo = req.file;
+        const { nombreProd, precioProd, descripcionProd } = req.body;
+        const indexProd = db.findIndex((item) => item.id === id);
+        db[indexProd] = {
+          id: id,
+          nombreProd: nombreProd,
+          precioProd: precioProd,
+          imagenProd: `images/imagenes-details/${archivo.filename}`,
+          descripcionProd: descripcionProd,
+        };
+        fs.writeFileSync(
+          path.join(__dirname, "../dataBase/producto.json"),
+          JSON.stringify(db, null, 4),
+          {
+            encoding: "utf8",
+          }
+        );
+        res.redirect("details", { producto:db });
+    },
+      };
+
+
 
 module.exports = controller

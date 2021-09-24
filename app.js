@@ -1,10 +1,12 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const methodOverride = require('method-override');
 const routesMain = require('./routes/main.routes');
-const routesAdmin = require('./routes/admin.routes')
+const routesAdmin = require('./routes/admin.routes');
 const PORT = process.env.PORT || 3000 ;
 
+app.use(methodOverride('_method'));
 
 app.use(express.static("./public"));
 
@@ -17,6 +19,7 @@ app.listen(PORT, () => {
 
 app.use('/',routesMain);
 app.use('/admin',routesAdmin);
+app.use('/edit', routesMain)
 
 
 app.use((req,res,next)=>{

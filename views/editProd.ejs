@@ -1,0 +1,38 @@
+<%- include('partials/head.ejs') %>
+
+    <body class="main-edit">
+        <main>
+            <section>
+                <div class="box-addProduct">
+                    <form action="/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                        <h3 class="form-item">
+                            Nuevo Producto
+                        </h3>
+                        <div class="form-item">
+                            <label>Nombre producto</label>
+                            <input type="text" name="nombreProd" placeholder="Agregue un nombre" value="<%= producto.nombreProd %>">
+                        </div>
+                        <div class="form-item addproduct-description">
+                            <label>Descripción</label>
+                            <input type="textarea" name="descripcionProd" placeholder="Agregue Descripción" value="<%= producto.descripcionProd %>">
+                        </div>
+                        <div class="form-item">
+                            <label>Imagen</label>
+                            <input type="file" name="imagenProd" class="is-input" accept=".jpg , .png">
+                        </div>
+                        <div class="form-item">
+                            <label> Precio </label>
+                            <input type="text" name="precioProd" class="is-input" placeholder="Precio" value="<%= producto.precioProd %>">
+                        </div>
+                        <div class="form-item">
+                            <div>
+                                <button type="submit" class="btn-form">Agregar producto</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </body>
+
+    </html>

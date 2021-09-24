@@ -7,6 +7,11 @@
     <%- include('partials/header') %>
 
       <main>
+
+        <form method="GET" action="/edit/<%= producto.id %>">
+          <input type="submit" value="Editar" name="Editar" class="btn-login">
+      </form>
+
         <a href="#" class="btn-whatsapp"><i class="fab fa-whatsapp"></i></a>
         <div class="list-enlace">
           <ul>
