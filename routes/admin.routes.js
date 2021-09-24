@@ -20,8 +20,8 @@ router.get("/addProd", controller.admin);
 
 router.post("/addProd",upload.single("imagenProd"), controller.newProd);
 
-router.get("/edit/:id", controller.getEdit);
-router.put("/edit/:id", upload.single("Imagen"), controller.editProd)
+router.get("/editProd/:id", controller.getEdit);
+router.put("/:id", upload.single("ImagenProd"), controller.editProd)
 
 
 

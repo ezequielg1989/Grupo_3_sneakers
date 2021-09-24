@@ -28,9 +28,6 @@ router.get('/cart',controller.cart);
 
 router.get('/:id', controller.product);
 
-router.get("/edit/:id", controller.getEdit);
-
-router.put("/edit/:id", upload.single("Imagen"), controller.editProd);
 
 
 
