@@ -75,4 +75,8 @@
     font-size: 20px;
   }
   
- 
+  @media(min-width:480px){
+    .formRegister {
+      padding-top: 200px; 
+    }  
+ }

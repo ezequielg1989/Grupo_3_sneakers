@@ -42,7 +42,7 @@
         "descripcionProd": "Las zapatillas Fila Fore Jogger están confeccionadas en poliéster y materiales que las hacen resistentes y duraderas para todo tipo de uso. Su diseño se inspira en líneas deportivas y colores rústicos para dar como resultado un look urbano fácil de combinar con tus outfits. La suela de goma te ofrece la tracción necesaria sobre la superficie mientras que el ajuste con sistema de cordones te brinda el control personalizado."
     },
     {
-        "id": 7,
+        "id": "7",
         "nombreProd": "Nike Air Max 90",
         "precioProd": 18000,
         "imagenProd": "images/imagenes-details/nike2.jpeg",
@@ -54,5 +54,12 @@
         "descripcionProd": "cdc",
         "precioProd": "222",
         "imagenProd": "images/imagenes-details/imagenProd-1632525472264-921550270maria prieto.png"
+    },
+    {
+        "id": "12927d31-fdf2-4f4f-b25c-8c29e9d44a4d",
+        "nombreProd": "2",
+        "descripcionProd": "2",
+        "precioProd": "2",
+        "imagenProd": "images/imagenes-details/imagenProd-1632592918421-41550968pika.png"
     }
 ]

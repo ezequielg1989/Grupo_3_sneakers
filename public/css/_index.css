@@ -102,6 +102,7 @@ index
       }
       
       .top-main{
+          padding-top: 235px;
           display: flex;
           justify-content: space-around;
           flex-direction: row;

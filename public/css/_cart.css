@@ -44,3 +44,9 @@ section.total{
 input[type=number] {
     width: 40px;
  }
+
+ @media(min-width:480px){
+     section.cart{
+         padding:100px;
+     }
+ }

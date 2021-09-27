@@ -6,7 +6,7 @@
 .list-enlace ul{
     
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 20px;
     flex-direction: row;
     list-style: none;
@@ -134,6 +134,9 @@ hr{
 
     .img-prod img{
         max-width: 500px;
+    }
+    .btn-edit{
+        margin-top: 190px;
     }
 
 }

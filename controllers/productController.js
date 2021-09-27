@@ -33,7 +33,7 @@ let controller = {
         const id = req.params.id;
         const prod = db.find((item) => item.id === id);
         res.render("editProd", { producto:prod });
-
+        
       },
 
     editProd: (req, res) => {
@@ -55,8 +55,7 @@ let controller = {
             encoding: "utf8",
           }
         );
-        console.log("holaa");
-        //res.render("index", { producto:db });
+        res.render("index", { producto:db });
     },
       };
 
