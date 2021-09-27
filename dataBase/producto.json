@@ -47,19 +47,5 @@
         "precioProd": 18000,
         "imagenProd": "images/imagenes-details/nike2.jpeg",
         "descripcionProd": "Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
-    },
-    {
-        "id": "9e87ddb2-83cb-4cdb-9c83-e1b1eca31271",
-        "nombreProd": "dcd",
-        "descripcionProd": "cdc",
-        "precioProd": "222",
-        "imagenProd": "images/imagenes-details/imagenProd-1632525472264-921550270maria prieto.png"
-    },
-    {
-        "id": "12927d31-fdf2-4f4f-b25c-8c29e9d44a4d",
-        "nombreProd": "2",
-        "descripcionProd": "2",
-        "precioProd": "2",
-        "imagenProd": "images/imagenes-details/imagenProd-1632592918421-41550968pika.png"
     }
 ]
