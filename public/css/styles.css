@@ -35,6 +35,7 @@
 }
 
 .list-1 li a{
+    margin-right: 15px;
     font-family: 'Bebas Neue', cursive;
     font-size: 25px; 
     color: white;
@@ -56,6 +57,7 @@
 }
 
 .btn-header{
+    margin-right: 15px;
     font-family: 'Bebas Neue', cursive;
     background-color:white;
     color:black;
