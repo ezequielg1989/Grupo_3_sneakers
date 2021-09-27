@@ -46,8 +46,12 @@
 }
 
 .detail{
+    color: black;
     margin-bottom: 5px;
     
+}
+.detail a{
+    text-decoration: none;
 }
 
 
@@ -78,6 +82,10 @@
 
 .cantidad{
     width: 60px;
+}
+
+.fas{
+    color: black;
 }
 
 .img-principal{
