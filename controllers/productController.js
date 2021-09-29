@@ -55,7 +55,7 @@ let controller = {
             encoding: "utf8",
           }
         );
-        res.render("index", { producto:db });
+        res.redirect("index");
     },
       };
 

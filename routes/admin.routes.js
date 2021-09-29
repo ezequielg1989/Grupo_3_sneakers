@@ -21,7 +21,7 @@ router.get("/addProd", controller.admin);
 router.post("/addProd",upload.single("imagenProd"), controller.newProd);
 
 router.get("/editProd/:id", controller.getEdit);
-router.put("/editProd/:id", controller.editProd)
+router.put("/:id", controller.editProd)
 
 
 

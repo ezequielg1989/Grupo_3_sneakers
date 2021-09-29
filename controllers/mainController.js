@@ -12,11 +12,10 @@ let controller = {
   cart: (req, res) => {
     res.render("cart.ejs");
   },
-  details: (req, res) => {
-    res.render("details.ejs", { productos: db });
-  },
+  
+  
   product: (req, res) => {
-    res.render("details.ejs", { producto: db.find((prod) => prod.id == req.params.id) });
+    res.render("details", { producto: db.find((prod) => prod.id == req.params.id) });
   },
   getEdit: (req, res) => {
     const id = req.params.id;
@@ -43,7 +42,7 @@ let controller = {
         encoding: "utf8",
       }
     );
-    res.redirect("details", { producto: db });
+    res.redirect("index");
   },
 };
 

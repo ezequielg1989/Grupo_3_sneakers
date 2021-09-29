@@ -38,6 +38,9 @@ index
     transition: 0.4s;
     border-radius: 10px;
 }
+.box-product:hover{
+    transform: scale(1.05);
+}
 
 
 
@@ -50,6 +53,8 @@ index
 .box-product img{
     max-width: 300px;
 }
+
+
 
 .box-product:hover{
     opacity: 0.85;
