@@ -18,15 +18,15 @@ const storage = multer.diskStorage({
 const upload = multer({ storage: storage });
 
 
-router.get('/',controller.home);
+router.get('/',controller.home);//ruta a la pagina principal
 
-router.get('/register',controller.register);
+router.get('/register',controller.register);//ruta a la pagina de registro
 
-router.get('/login',controller.login);
+router.get('/login',controller.login);//ruta a la pagina de login
 
-router.get('/cart',controller.cart);
+router.get('/cart',controller.cart);//ruta al carrito de compras
 
-router.get('/:id', controller.product);
+router.get('/:id', controller.product);//ruta al detalle de producto por id
 
 
 

@@ -16,12 +16,13 @@ const storage = multer.diskStorage({
 });
 
 const upload = multer({ storage: storage });
-router.get("/addProd", controller.admin);
+router.get("")
+router.get("/addProd", controller.admin);//ruta al formulario para sumar un producto
 
-router.post("/addProd",upload.single("imagenProd"), controller.newProd);
+router.post("/addProd",upload.single("imagenProd"), controller.newProd);//ruta a la pagina q suma producto
 
-router.get("/editProd/:id", controller.getEdit);
-router.put("/:id", controller.editProd)
+router.get("/editProd/:id", controller.getEditAdmin);//ruta al formulario de edicion de producto
+router.put("/editProd/:id", upload.single("imagenProd"),controller.editProd)//ruta q edita el formulario y lo carga
 
 
 

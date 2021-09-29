@@ -64,6 +64,7 @@ index
     margin: 0px 5px 0px 5px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .box-product p{
@@ -81,10 +82,11 @@ index
 }
 
 .product-top a{
-    
+    padding: 0px 10px 0px 10px;
     color: white;
 }
 .product-top button{
+    padding: auto;
     background-color: black;
     border-radius: 5px;
     width: 100px;
@@ -95,13 +97,18 @@ index
 }
 
 .product-top button:hover{
-    background-color: rgb(172, 168, 168);
+    background-color: rgb(219, 16, 16);
 }
 
 .product-top a:hover{
+    text-decoration: none;
     color: white;
 }
 
+.product-top h3{
+    font-size: 1.3rem;
+    font-family: 'Bebas Neue', cursive;
+}
 
 
 

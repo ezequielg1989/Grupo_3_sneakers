@@ -5,7 +5,7 @@ const path = require("path");
 
 let controller = {
     admin: (req, res) => {
-        res.render('addProd.ejs');
+        res.render('addProd.ejs');// renderiza a la pagina de suma de producto
     },
 
     newProd: (req, res) => {
@@ -29,14 +29,18 @@ let controller = {
     res.redirect("/"),{producto:db};
     },
 
-    getEdit: (req, res) => {
+    getEditAdmin: (req, res) => {
         const id = req.params.id;
         const prod = db.find((item) => item.id === id);
+        console.log(prod);
+
         res.render("editProd", { producto:prod });
         
       },
 
     editProd: (req, res) => {
+        console.log("hola");
+
         const id = req.params.id;
         const archivo = req.file;
         const { nombreProd, precioProd, descripcionProd } = req.body;
@@ -55,7 +59,7 @@ let controller = {
             encoding: "utf8",
           }
         );
-        res.redirect("index");
+        res.render("editProd");
     },
       };
 

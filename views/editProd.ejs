@@ -4,7 +4,7 @@
         <main>
             <section>
                 <div class="box-addProduct">
-                    <form action="/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <form action="/admin/editProd/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                         <input readonly type="hidden" name="id" value="<%= producto.id %>">   
                         <h3 class="form-item">
                             Nuevo Producto
