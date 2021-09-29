@@ -19,7 +19,7 @@ const upload = multer({ storage: storage });
 router.get("")
 router.get("/addProd", controller.admin);//ruta al formulario para sumar un producto
 
-router.post("/addProd",upload.single("imagenProd"), controller.newProd);//ruta a la pagina q suma producto
+router.post("/addProd",upload.single("imagenProd"), controller.newProd);//procesa la suma de un nuevo producto
 
 router.get("/editProd/:id", controller.getEditAdmin);//ruta al formulario de edicion de producto
 router.put("/editProd/:id", upload.single("imagenProd"),controller.editProd)//ruta q edita el formulario y lo carga

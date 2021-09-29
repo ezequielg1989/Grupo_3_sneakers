@@ -18,8 +18,7 @@
 }
 .top-header{
     display: flex;
-    flex-direction: column;
-    padding-right: 2%;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,8 +49,8 @@
 
 
 .img-header{
-    width: 170px;
-    height: 120px;
+    width: 87px;
+    height: 100px;
     filter: invert(1) sepia();
     
 }
@@ -276,6 +275,12 @@ footer{
         width: 100vw;
         position: fixed;
     }
+
+    .img-header{
+        width: 140px;
+        height: 110px;
+    }
+
     .img-principal{
         max-width: 500px;
         margin-left: 50px;
@@ -290,9 +295,6 @@ footer{
         font-size: 30px;
     }
     
-    .top-header{
-        flex-direction: row;
-    }
 
     .icon-register a{
         position: relative;
