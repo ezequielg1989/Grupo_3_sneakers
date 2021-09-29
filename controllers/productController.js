@@ -32,15 +32,11 @@ let controller = {
     getEditAdmin: (req, res) => {
         const id = req.params.id;
         const prod = db.find((item) => item.id === id);
-        console.log(prod);
-
         res.render("editProd", { producto:prod });
         
       },
 
     editProd: (req, res) => {
-        console.log("hola");
-
         const id = req.params.id;
         const archivo = req.file;
         const { nombreProd, precioProd, descripcionProd } = req.body;
@@ -59,8 +55,9 @@ let controller = {
             encoding: "utf8",
           }
         );
-        res.render("editProd");
-    },
+        res.redirect("/"),{producto:db};
+
+      },
       };
 
 

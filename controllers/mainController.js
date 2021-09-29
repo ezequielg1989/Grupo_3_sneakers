@@ -42,7 +42,7 @@ let controller = {
         encoding: "utf8",
       }
     );
-    res.redirect('back');
+    res.redirect('index');
   },
 };
 

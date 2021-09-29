@@ -50,10 +50,10 @@
     margin-bottom: 5px;
     
 }
-.detail a{
+.detail h2{
+    color: blue;
     text-decoration: none;
 }
-
 
 .button-carrito{
     font-size: 20px;
