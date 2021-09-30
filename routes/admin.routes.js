@@ -23,6 +23,7 @@ router.post("/addProd",upload.single("imagenProd"), controller.newProd);//proces
 
 router.get("/editProd/:id", controller.getEditAdmin);//ruta al formulario de edicion de producto
 router.put("/editProd/:id", upload.single("imagenProd"),controller.editProd)//ruta q edita el formulario y lo carga
+router.delete("/:id",controller.deleteProd);
 
 
 

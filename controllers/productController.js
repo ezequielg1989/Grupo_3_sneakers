@@ -1,4 +1,4 @@
-const db = require('../dataBase/producto.json');
+let db = require('../dataBase/producto.json');
 const { v4: uuidv4 } = require('uuid');
 const fs = require("fs");
 const path = require("path");
@@ -57,6 +57,19 @@ let controller = {
         );
         res.redirect("/"),{producto:db};
 
+      },
+      deleteProd:(req, res) => {
+        const id = req.params.id;
+        db=db.filter((item) => item.id != id);
+        fs.writeFileSync(
+          path.join(__dirname, "../dataBase/producto.json"),
+          JSON.stringify(db, null, 4),
+          {
+            encoding: "utf8",
+          },        
+          );
+        
+        res.render("index", { productos: db });
       },
       };
 

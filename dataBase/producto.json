@@ -1,9 +1,9 @@
 [
     {
         "id": "1",
-        "nombreProd": "nike 1force",
-        "precioProd": "10000",
-        "imagenProd": "images/imagenes-details/imagenProd-1632929354018-195414774nike-shadow.png",
+        "nombreProd": "nike force",
+        "precioProd": 10000,
+        "imagenProd": "images/imagenes-details/nike2.jpeg",
         "descripcionProd": "Conquista las dudas y haz una declaración con las Nike Air Force 1 Pixel, un estilo fuera de la cancha rediseñado hecho por y para mujeres. Su parte superior de cuero nítido presenta líneas limpias y texturas sutiles para una apariencia fresca que es fácil de diseñar. La suela y la entresuela distorsionadas tienen grandes detalles pixelados para un toque moderno, mientras que el nuevo logotipo y el diseño Swoosh invertido son un acto de audacia inquebrantable"
     },
     {

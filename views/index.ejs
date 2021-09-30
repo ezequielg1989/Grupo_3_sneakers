@@ -60,7 +60,11 @@
             <ul>
               <% productos.forEach(function(producto){ %>
                 <%- include('partials/product.ejs',{producto:producto}) %>
-                  <% }); %>
+                <form method="POST"  action="/<%= producto.id %>?_method=DELETE" enctype="multipart/form-data">
+                  <input type="submit" value="Eliminar" name="delete" class="btn-edit">
+                </form>  
+                <% }); %>
+                  
             </ul>
           </div>
         </div>
