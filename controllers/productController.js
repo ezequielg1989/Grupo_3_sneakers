@@ -4,6 +4,10 @@ const fs = require("fs");
 const path = require("path");
 
 let controller = {
+  homeAdmin: (req, res) => {
+    
+    res.render("listProd.ejs", { productos: db });
+  },
     admin: (req, res) => {
         res.render('addProd.ejs');// renderiza a la pagina de suma de producto
     },
@@ -69,7 +73,7 @@ let controller = {
           },        
           );
         
-        res.render("index", { productos: db });
+        res.render("listProd", { productos: db });
       },
       };
 

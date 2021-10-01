@@ -230,6 +230,10 @@ hr{
     justify-content: space-around;
     padding-bottom: 10px;
 }
+
+.img-admin{
+    max-width: 200px;
+}
 /*================================
 footer
 =================================*/

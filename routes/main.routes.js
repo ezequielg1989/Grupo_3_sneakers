@@ -20,7 +20,7 @@ const upload = multer({ storage: storage });
 
 
 router.get('/',controller.home);//ruta a la pagina principal
-router.delete("/:id",controller1.deleteProd);
+//router.delete("/:id",controller1.deleteProd);
 router.get('/register',controller.register);//ruta a la pagina de registro
 
 router.get('/login',controller.login);//ruta a la pagina de login
