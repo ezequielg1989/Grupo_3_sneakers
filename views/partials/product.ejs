@@ -11,7 +11,15 @@
     <img src="<%- producto.imagenProd %> ">
 
   </a>
-
+  <div class="btn-admin">
+    <form method="POST"  action="/<%= producto.id %>?_method=DELETE" enctype="multipart/form-data">
+      <input type="submit" value="Eliminar" name="delete">
+    </form> 
+    <form method="GET" action="/admin/editProd/<%= producto.id %>">
+      <input type="submit" value="Editar" name="Editar">
+    </form>
+    
+  </div>
   <p>
     <%- producto.descripcionProd %>
   </p>

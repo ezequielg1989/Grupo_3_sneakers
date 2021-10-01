@@ -225,6 +225,11 @@ hr{
     position: fixed;
 }
 
+.btn-admin{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
 /*================================
 footer
 =================================*/
