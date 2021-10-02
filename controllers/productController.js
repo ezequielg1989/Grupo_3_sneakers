@@ -1,4 +1,6 @@
 let db = require('../dataBase/producto.json');
+let dbUser = require('../dataBase/usuarios.json');
+
 const { v4: uuidv4 } = require('uuid');
 const fs = require("fs");
 const path = require("path");
@@ -75,6 +77,26 @@ let controller = {
         
         res.render("listProd", { productos: db });
       },
+
+      newUser:(req,res)=>{
+        res.render('register.ejs');// renderiza a la pagina de suma de producto
+
+      },
+      createUser:(req,res)=>{
+          const { email,username,password } = req.body;
+          const users = {
+          id: uuidv4(),
+          nameUser:username,
+          emailUser: email,
+          passwordUser:password,      
+          };
+          dbUser.push(users);
+          fs.writeFileSync(path.join(__dirname,"../dataBase/usuarios.json"), JSON.stringify(dbUser, null, 4), {
+          encoding: "utf8",
+          });
+      
+          res.redirect("/");
+      }
       };
 
 
