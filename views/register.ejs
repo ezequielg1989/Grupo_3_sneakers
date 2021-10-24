@@ -8,9 +8,9 @@
         <%- include('partials/header') %>
 
             <main>
-
+                
                 <div class="formRegister">
-                    <form>
+                    <form method="POST" action="/register" enctype="multipart/form-data">
                         <div>
                             <h2>Registrarse</h2>
 
@@ -19,26 +19,41 @@
                             <label> Correo Electronico</label>
                         </div>
                         <div>
-                            <input type="text" name="email" placeholder="anael@gmail.com">
+                            <input type="text" name="email" placeholder="anael@gmail.com" value="<%= locals.oldData ? oldData.email : null %>">
                         </div>
+                        <% if (locals.errors && errors.email) { %>
+                           <div class="danger">
+                               <%= errors.email.msg %>
+                           </div>
+                        <% } %>  
                         <div>
                             <label> Usuario </label>
                         </div>
                         <div>
-                            <input type="text" name="username" placeholder="Fulanito" minlength="7" maxlength="10">
+                            <input type="text" name="username" placeholder="Fulanito" minlength="7" maxlength="10" value="<%= locals.oldData ? oldData.username : null %>">
+                        </div>
+                        <% if (locals.errors && errors.username) { %>
+                            <div class="danger">
+                                <%= errors.username.msg %>
+                            </div>
+                         <% } %>  
+                        <div>
+                            <label> foto de perfil </label>
+                        </div>
+                        <div>
+                            <input type="file" name="perfil">
                         </div>
                         <div>
                             <label> Contraseña </label>
                         </div>
                         <div>
-                            <input type="text" name="password" minlength="7" maxlength="10">
+                            <input type="password" name="password" minlength="7" maxlength="10" value="<%= locals.oldData ? oldData.password : null %>">
                         </div>
-                        <div>
-                            <label> Repetir contraseña </label>
-                        </div>
-                        <div>
-                            <input type="text" name="password" minlength="7" maxlength="10">
-                        </div>
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="danger">
+                                <%= errors.password.msg %>
+                            </div>
+                         <% } %>  
                         <div>
                             <button type="reset"> Borrar</button>
                         </div>

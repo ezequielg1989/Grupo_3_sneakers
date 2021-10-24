@@ -225,6 +225,12 @@ hr{
     position: fixed;
 }
 
+.btn-delete{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
 /*================================
 footer
 =================================*/

@@ -1,18 +1,16 @@
-let db = require('../dataBase/producto.json');
+ db = require('../dataBase/producto.json');
 const { v4: uuidv4 } = require('uuid');
 const fs = require("fs");
 const path = require("path");
 
 let controller = {
     admin: (req, res) => {
-        res.render('addProd.ejs');// renderiza a la pagina de suma de producto
+        res.render("addProd.ejs");// renderiza a la pagina de suma de producto
     },
 
     newProd: (req, res) => {
     const archivo = req.file;
     const { nombreProd, descripcionProd,precioProd, } = req.body;
-
-
     const prod = {
     id: uuidv4(),
     nombreProd:nombreProd,
@@ -26,7 +24,7 @@ let controller = {
     encoding: "utf8",
     });
 
-    res.redirect("/"),{producto:db};
+    res.render("/"),{productos:db};
     },
 
     getEditAdmin: (req, res) => {
@@ -60,6 +58,7 @@ let controller = {
       },
       deleteProd:(req, res) => {
         const id = req.params.id;
+        //let newdb=db;
         db=db.filter((item) => item.id != id);
         fs.writeFileSync(
           path.join(__dirname, "../dataBase/producto.json"),

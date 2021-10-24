@@ -1,4 +1,8 @@
-const db = require('../dataBase/producto.json')
+let db = require('../dataBase/producto.json')
+
+const{validationResult} = require('express-validator');
+const User = require('../models/User')
+
 let controller = {
   home: (req, res) => {
     res.render("index.ejs", { productos: db });
@@ -6,16 +10,40 @@ let controller = {
   register: (req, res) => {
     res.render("register.ejs");
   },
+
+  registerProcess: (req,res) => {
+    const resultValidation = validationResult(req);
+
+    if(resultValidation.errors.length > 0){
+      return res.render('register',{
+        errors:resultValidation.mapped(),
+        oldData: req.body
+      });
+    }
+
+    let userCreate = {
+      ...req.body,
+      perfil: req.file.filename
+    }
+    User.create(userCreate);
+    return res.render('index',{ productos: db })
+  },
+
   login: (req, res) => {
     res.render("login.ejs");
   },
+
+  //loginIn: (),
+
   cart: (req, res) => {
     res.render("cart.ejs");
   },
   
   
   product: (req, res) => {
-    res.render("details", { producto: db.find((prod) => prod.id == req.params.id) });
+    const id = req.params.id;
+    const prod = db.find((item) => item.id == id);
+    res.render("details", { producto:prod });
   },
   getEdit: (req, res) => {
     const id = req.params.id;
@@ -42,7 +70,7 @@ let controller = {
         encoding: "utf8",
       }
     );
-    res.redirect('index');
+    res.render('index');
   },
 };
 

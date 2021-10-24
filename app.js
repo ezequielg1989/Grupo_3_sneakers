@@ -22,7 +22,7 @@ app.listen(PORT, () => {
 });
 
 app.use('/',routesMain);
-app.use('/admin',routesAdmin);
+app.use('/',routesAdmin);
 
 
 

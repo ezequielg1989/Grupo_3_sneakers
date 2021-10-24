@@ -64,7 +64,9 @@
       margin: 0 auto; 
   }
   
- 
+  .danger{
+    color: rgb(204, 40, 40);
+  }
   
   .terminosLogin{
     padding: 5px 0;
