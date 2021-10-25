@@ -51,7 +51,8 @@
     
 }
 .detail h2{
-    color: blue;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(7, 7, 7);
     text-decoration: none;
 }
 
@@ -73,6 +74,7 @@
 }
 
 .price{
+    font-family: 'Bebas Neue', cursive;
     text-decoration: line-through;
 }
 
@@ -145,6 +147,10 @@ hr{
     }
     .btn-edit{
         margin-top: 190px;
+    }
+
+    .main-details{
+        padding-top: 200px;
     }
 
 }

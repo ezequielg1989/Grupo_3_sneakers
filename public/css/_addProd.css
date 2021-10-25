@@ -1,9 +1,9 @@
-@import url(styles.css);
 
 
 .main-edit{
-    color: black;
-    background-image: url("public/images/add-edit-product/back-zapas.jpg");
+
+    color: rgb(22, 20, 20);
+    background-image: url("/images/add-edit-product/back-zapas.jpg");
     background-size: 100%;
 }
 .box-addProduct{

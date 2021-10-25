@@ -10,7 +10,11 @@
             <main>
                 
                 <div class="formRegister">
+<<<<<<< HEAD
                     <form method="POST" action="/register" enctype="multipart/form-data">
+=======
+                    <form action="/admin/addUser" method="POST">
+>>>>>>> eac9a07b83fdec8f2f07faec792050e6e3dc30b6
                         <div>
                             <h2>Registrarse</h2>
 
@@ -41,13 +45,21 @@
                             <label> foto de perfil </label>
                         </div>
                         <div>
+<<<<<<< HEAD
                             <input type="file" name="perfil">
+=======
+                            <input type="password" name="password" minlength="7" maxlength="10">
+>>>>>>> eac9a07b83fdec8f2f07faec792050e6e3dc30b6
                         </div>
                         <div>
                             <label> Contraseña </label>
                         </div>
                         <div>
+<<<<<<< HEAD
                             <input type="password" name="password" minlength="7" maxlength="10" value="<%= locals.oldData ? oldData.password : null %>">
+=======
+                            <input type="password" name="password" minlength="7" maxlength="10">
+>>>>>>> eac9a07b83fdec8f2f07faec792050e6e3dc30b6
                         </div>
                         <% if (locals.errors && errors.password) { %>
                             <div class="danger">

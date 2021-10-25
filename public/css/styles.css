@@ -225,12 +225,24 @@ hr{
     position: fixed;
 }
 
+<<<<<<< HEAD
 .btn-delete{
     display: flex;
     text-align: center;
     justify-content: space-around;
 }
 
+=======
+.btn-admin{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.img-admin{
+    max-width: 200px;
+}
+>>>>>>> eac9a07b83fdec8f2f07faec792050e6e3dc30b6
 /*================================
 footer
 =================================*/
