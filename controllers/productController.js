@@ -11,7 +11,7 @@ let controller = {
     
     res.render("listProd.ejs", { productos: db });
   },
-    admin: (req, res) => {
+  admin: (req, res) => {
         res.render("addProd.ejs");// renderiza a la pagina de suma de producto
     },
 

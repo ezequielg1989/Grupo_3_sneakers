@@ -5,5 +5,12 @@
         "username": "",
         "password": "",
         "perfil": "1635115780581_img.png"
+    },
+    {
+        "id": 2,
+        "email": "ezequiel.ganzero1@gmail.com",
+        "username": "ganzeromat",
+        "password": "111111111",
+        "perfil": "1635132364007_img.png"
     }
 ]

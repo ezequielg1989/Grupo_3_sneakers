@@ -1,6 +1,5 @@
 const express = require('express');
 const controller = require('../controllers/mainController.js')
-const controller1 = require('../controllers/productController.js')
 const router = express.Router();
 const multer = require('multer');
 const path = require("path");
@@ -22,6 +21,9 @@ const upload = multer({ storage: storage });*/
 
 
 router.get('/',controller.home);//ruta a la pagina principal
+
+router.get('/admin',controller.homeAdmin);
+
 //router.delete("/:id",controller1.deleteProd);
 router.get('/register',controller.register);//ruta a la pagina de registro
 router.post('/register',uploadfile.single('perfil'),validations,controller.registerProcess);//carga de datos de usuario

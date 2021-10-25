@@ -2,8 +2,8 @@
     {
         "id": "1",
         "nombreProd": "nike force",
-        "precioProd": 10000,
-        "imagenProd": "images/imagenes-details/nike2.jpeg",
+        "precioProd": "111000",
+        "imagenProd": "images/imagenes-details/imagenProd-1635133111643-749194369nike8.jpg",
         "descripcionProd": "Conquista las dudas y haz una declaración con las Nike Air Force 1 Pixel, un estilo fuera de la cancha rediseñado hecho por y para mujeres. Su parte superior de cuero nítido presenta líneas limpias y texturas sutiles para una apariencia fresca que es fácil de diseñar. La suela y la entresuela distorsionadas tienen grandes detalles pixelados para un toque moderno, mientras que el nuevo logotipo y el diseño Swoosh invertido son un acto de audacia inquebrantable"
     },
     {
@@ -30,8 +30,8 @@
     {
         "id": "5",
         "nombreProd": "Nike Air Max 270",
-        "precioProd": 12000,
-        "imagenProd": "images/imagenes-details/nike3.jpeg",
+        "precioProd": "12000",
+        "imagenProd": "images/imagenes-details/imagenProd-1635133131418-675680650imagenProd-1635133111643-749194369nike8.jpg",
         "descripcionProd": "Las zapatillas Nike Air Max 90 mantienen su fidelidad al modelo original pero con un diseño innovador hecho en al menos un 20% con materiales reciclados. La suela exterior Grind con patrón clásico de gofre y detalles de TPU en los ojales se unen a la amortiguación Max Air que te permite una pisada más ligera y cómoda."
     },
     {
