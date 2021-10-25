@@ -24,8 +24,8 @@ router.post("/addProd",upload.single("imagenProd"), controller.newProd);//proces
 router.get("/addUser", controller.newUser);//ruta al formulario para sumar un producto
 router.post("/addUser", controller.createUser);//procesa la suma de un nuevo producto
 
-router.get("/editProd/:id", controller.getEditAdmin);//ruta al formulario de edicion de producto
-router.put("/editProd/:id", upload.single("imagenProd"),controller.editProd)//ruta q edita el formulario y lo carga
+router.get("/:id", controller.getEditAdmin);//ruta al formulario de edicion de producto
+router.put("/:id", upload.single("imagenProd"),controller.editProd)//ruta q edita el formulario y lo carga
 router.delete("/:id",controller.deleteProd);
 
 

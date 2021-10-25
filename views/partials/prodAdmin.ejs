@@ -28,10 +28,10 @@
   
     </a>
     <div class="btn-admin">
-      <form method="POST"  action="/admin/<%= producto.id %>?_method=DELETE" enctype="multipart/form-data">
+      <form method="POST"  action="/<%= producto.id %>?_method=DELETE" enctype="multipart/form-data">
         <input type="submit" value="Eliminar" name="delete">
       </form> 
-      <form method="GET" action="/admin/editProd/<%= producto.id %>">
+      <form method="GET" action="/editProd/<%= producto.id %>">
         <input type="submit" value="Editar" name="Editar">
       </form>
       

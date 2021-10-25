@@ -77,6 +77,7 @@ let controller = {
         
         res.render("listProd", { productos: db });
       },
+    
 
       newUser:(req,res)=>{
         res.render('register.ejs');// renderiza a la pagina de suma de producto
