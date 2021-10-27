@@ -5,6 +5,7 @@ const path = require("path");
 const{validationResult} = require('express-validator');
 const User = require('../models/User')
 const { v4: uuidv4 } = require('uuid');
+const bcryptjs = require('bcryptjs')
 
 let controller = {
   home: (req, res) => {
@@ -49,9 +50,21 @@ let controller = {
         oldData: req.body
       });
     }
+    let userInDB = User.findByEmail('email',req.body.email);
 
+    if (userInDB){
+      return res.render('register',{
+        errors:{
+          email:{
+            msg:'este email ya esta registrado'
+          }
+        },
+        oldData: req.body
+      });
+    }
     let userCreate = {
       ...req.body,
+      password:bcryptjs.hashSync(req.body.password,10),
       perfil: req.file.filename
     }
     User.create(userCreate);
@@ -62,7 +75,30 @@ let controller = {
     res.render("login.ejs");
   },
 
-  //loginIn: (),
+  loginIn: (req,res)=> {
+    let userLogin = User.findByEmail('email',req.body.email);
+    if(userLogin){
+      let passwordOk = bcryptjs.compareSync(req.body.password,userLogin.password);
+      if (passwordOk){
+        return res.render('index',{productos:db})
+      }
+      return res.render('login',{
+        errors:{
+          email:{
+            msg:'contraseña inavalida'
+          }
+        }
+      })
+    
+    }
+    return res.render('register',{
+      errors:{
+        email:{
+          msg:'email invalido'
+        }
+      }
+    })
+  },
 
   cart: (req, res) => {
     res.render("cart.ejs");

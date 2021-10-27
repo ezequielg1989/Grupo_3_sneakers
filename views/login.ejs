@@ -10,7 +10,7 @@
 
             <main>
                 <div class="formLogin">
-                    <form>
+                    <form method="POST" action="/login">
 
                         <div>
                             <h2>Iniciar Sesión</h2>
@@ -18,17 +18,27 @@
                                 <input class='butoms-facebook' type='submit' value='Facebook Login'>
                                 <input class='butoms-google' type='submit' value='Google Login'>
                             </div>
-                            <label>Usuario</label>
+                            <label>email</label>
                         </div>
                         <div>
-                            <input type="text" name="username" placeholder="Fulanito" minlength="7" maxlength="10">
+                            <input type="text" name="email" placeholder="Fulanito@gmail.com" >
                         </div>
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="danger">
+                                <%= errors.email.msg %>
+                            </div>
+                         <% } %>
                         <div>
                             <label>Contraseña</label>
                         </div>
                         <div>
                             <input type="password" name="password" minlength="7" maxlength="10">
                         </div>
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="danger">
+                                <%= errors.password.msg %>
+                            </div>
+                         <% } %>
                         <div>
                             <button type="reset" class="loginBotonTipo1">Borrar</button>
                             <button type="submit" class="loginBotonTipo1">Continuar</button>
