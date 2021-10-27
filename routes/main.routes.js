@@ -32,6 +32,7 @@ router.get("/addProd", controller.admin);//ruta al formulario para sumar un prod
 router.post("/addProd",uploadfile.single("imagenProd"), controller.newProd);//procesa la suma de un nuevo producto
 
 router.get('/login',controller.login);//ruta a la pagina de login
+router.post('/login',controller.loginIn);
 //router.post('/login'.controller.loginIn);
 
 router.get('/cart',controller.cart);//ruta al carrito de compras

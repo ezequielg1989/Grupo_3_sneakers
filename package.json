@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/ezequielg1989/Grupo_3_sneakers#readme",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
     "express-validator": "^6.13.0",
