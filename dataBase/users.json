@@ -1,3 +1,16 @@
 [
-    
+    {
+        "id": 1,
+        "email": "ezequiel.ganzero1@gmail.com",
+        "username": "ganzeromat",
+        "password": "$2a$10$FcFFcFD0YLTqy.tezLNExOm//k8zszbYNyD35KWY1hfO3.7t9.xWy",
+        "perfil": "1635300168710_img.png"
+    },
+    {
+        "id": 2,
+        "email": "eze_g14@hotmail.com",
+        "username": "ezequiel.g",
+        "password": "$2a$10$m2f71TRdhT/AmoD8BqTrde1WVL60lFi5a0HibcL.oIh.HZdUDByDa",
+        "perfil": "1635307413838_img.png"
+    }
 ]

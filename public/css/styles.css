@@ -4,6 +4,8 @@
 @import url(_login.css);
 @import url(_addProd.css);
 @import url(_register.css);
+@import url(_profile.css);
+
 *{
     margin: 0;
     padding: 0;

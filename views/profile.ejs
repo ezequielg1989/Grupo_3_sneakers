@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include('partials/head') %>
+
+<body>
+      
+    <h2><%= user.username %></h2>
+    
+    <div class="img-profile">
+        <img  src="../images/perfil/<%= user.perfil %> "alt="" width="200px" >
+    </div>
+    
+    <div><%= user.email %></div>
+    <div><%= user.perfil %></div>
+</body>

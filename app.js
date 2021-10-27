@@ -1,10 +1,17 @@
 const express = require("express");
 const app = express();
 const path = require("path");
+const session = require('express-session');
 const methodOverride = require('method-override');
 const routesMain = require('./routes/main.routes');
 const routesAdmin = require('./routes/admin.routes');
-const PORT = process.env.PORT || 3000 ;
+const PORT = process.env.PORT || 3000 ; 
+
+app.use(session({
+  secret:'inicia session',
+  resave:false,
+  saveUninitialized:false
+}));
 
 app.use(methodOverride('_method'));
 

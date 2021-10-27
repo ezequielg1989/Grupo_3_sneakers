@@ -80,7 +80,9 @@ let controller = {
     if(userLogin){
       let passwordOk = bcryptjs.compareSync(req.body.password,userLogin.password);
       if (passwordOk){
-        return res.render('index',{productos:db})
+        delete userLogin.password;
+        req.session.userLogged = userLogin;
+        return res.render('profile',{user:req.session.userLogged})
       }
       return res.render('login',{
         errors:{

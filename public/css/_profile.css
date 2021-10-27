@@ -1,0 +1,8 @@
+@import url(styles.css);
+
+body {
+    background-color: black;
+}
+.img-profile{
+    max-width: 200px;
+}
