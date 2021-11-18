@@ -5,7 +5,9 @@ const session = require('express-session');
 const methodOverride = require('method-override');
 const routesMain = require('./routes/main.routes');
 const routesAdmin = require('./routes/admin.routes');
-const PORT = process.env.PORT || 3000 ; 
+const indexRouter = require('./routes/index');
+
+const PORT = process.env.PORT || 3002 ; 
 
 app.use(session({
   secret:'inicia session',
@@ -28,8 +30,9 @@ app.listen(PORT, () => {
   console.log(`Server is running on PORT : ${PORT}`);
 });
 
-app.use('/',routesMain);
-app.use('/',routesAdmin);
+app.use('/',indexRouter);
+//app.use('/',routesMain);
+//app.use('/',routesAdmin);
 
 
 

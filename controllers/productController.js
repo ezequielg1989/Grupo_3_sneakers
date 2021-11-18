@@ -1,5 +1,5 @@
 
-let db = require('../dataBase/producto.json');
+/*let db = require('../dataBase/producto.json');
 let dbUser = require('../dataBase/usuarios.json');
 
 const { v4: uuidv4 } = require('uuid');
@@ -102,4 +102,4 @@ let controller = {
 
 
 
-module.exports = controller
+module.exports = controller*/
