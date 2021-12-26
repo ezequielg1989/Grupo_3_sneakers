@@ -15,8 +15,11 @@ const shoesController = {
 
     },
     getShoesAdmin: async (req,res,next)=>{
-        const response = await shoeModel.getShoe();
-        res.render('addProd')
+        try {
+            res.render('addProd')
+        } catch (error) {
+            
+        }
 
 
     },
@@ -24,6 +27,7 @@ const shoesController = {
         try {
             const body = req.body;
             const response = await shoeModel.createShoe(body);
+            console.log(response);
         } catch (error) {
             
         }

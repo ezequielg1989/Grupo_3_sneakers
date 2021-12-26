@@ -1,0 +1,26 @@
+<div class="box-product">
+    <div class="product-top">
+      <h3>
+        <%- cliente.username %>
+      </h3>
+      <button class="bottom-product">
+        <a href="/<%- cliente.idclientes %> ">Comprar</a>
+      </button>
+    </div>
+    <a href="/<%- cliente.idclientes %> ">
+      <img src="<%- cliente.perfil %> ">
+  
+    </a>
+    <div class="btn-delete">
+      <form method="POST"  action="/<%= cliente.idclientes %>?_method=DELETE" enctype="multipart/form-data" >
+        <input type="submit" value="Eliminar" name="delete" >
+      </form> 
+      <form method="GET" action="/editUser/<%= cliente.idclientes %>" >
+        <input type="submit" value="Editar" name="Editar">
+      </form>
+    </div>
+    
+    <p>
+      <%- cliente.email %>
+    </p>
+  </div>

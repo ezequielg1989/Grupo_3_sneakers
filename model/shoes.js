@@ -46,24 +46,7 @@ const shoeModel = {
         }
         
     },
-    createShoe : async (producto)=>{
-        try {
-            const response = await db.shoes.create(
-                {
-                    idshoes: producto.idshoes,
-                    nombreProd:producto.nombreProd,
-                    descripcionProd: producto.descripcionProd,
-                    precioProd:producto.precioProd,
-                    imagenProd: `images/imagenes-details/${producto.filename}`,
-                }
-            );
-            return response
-        } catch (error) {
-            console.log(`fallo crear producto a la DB ${error.message}`);
-            return []
-        }
-        
-    },
+
     updateShoe : async (producto)=>{
         try {
             const response = await db.shoes.update(
@@ -98,4 +81,4 @@ const shoeModel = {
     }
 }
 
-module.exports=shoeModel;
+module.exports= shoeModel;

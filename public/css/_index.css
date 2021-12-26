@@ -42,7 +42,9 @@ index
     transform: scale(1.05);
 }
 
-
+.btn-delete{
+    margin-bottom: 20px;
+}
 
 .box-product a p {
     font-family: 'Bebas Neue', cursive;

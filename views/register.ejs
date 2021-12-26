@@ -16,6 +16,18 @@
 
                         </div>
                         <div>
+                            <label> Id Usuario</label>
+                        </div>
+                        <div>
+                            <input type="text" name="idclientes" placeholder="" value="<%= locals.oldData ? oldData.idclientes : null %>">
+                        </div>
+                        <% if (locals.errors && errors.idclientes) { %>
+                           <div class="danger">
+                               <%= errors.idclientes.msg %>
+                           </div>
+                        <% } %>  
+                        <div>
+                        <div>
                             <label> Correo Electronico</label>
                         </div>
                         <div>

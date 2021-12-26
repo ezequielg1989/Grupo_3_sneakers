@@ -1,4 +1,4 @@
 const shoeModel = require ('./shoes');
+const userModel = require('./users');
 
-
-module.exports = {shoeModel}
+module.exports = {shoeModel , userModel }
