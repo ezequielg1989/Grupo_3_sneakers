@@ -9,6 +9,6 @@ const validations = require('../middlewares/validationRegister')
 
 /*REGISTER user*/
 
-router.get('/register',controllerUser.registerUser);//ruta a la pagina de registro
-router.post('/register',uploadFile.single('perfil'),validations,controllerUser.createUser);//carga de datos de usuario
+router.get('/register',controllerUser.registerUsers);//ruta a la pagina de registro
+router.post('/register',uploadFile.single('perfil'),validations,controllerUser.createUsers);//carga de datos de usuario
 

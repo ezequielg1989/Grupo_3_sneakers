@@ -14,27 +14,28 @@ const validations = require('../middlewares/validationRegister')
 
  /*CREATE prod*/
 
- router.get('/addProd', controllerShoes.getShoesAdmin);//ruta al formulario para sumar un producto
- router.post('/addProd',uploadFile.single("imagenProd"), controllerShoes.createShoes)
+// router.get('/addProd', controllerShoes.getShoesAdmin);//ruta al formulario para sumar un producto
+// router.post('/addProd',uploadFile.single("imagenProd"), controllerShoes.createShoes)
 
 // /*SELECT prod*/
- router.get("/:id",controllerShoes.ProdShoes);
+//router.get("/:id",controllerShoes.shoes);
 
- router.get("/editProd/:id", controllerShoes.showEditShoes);//ruta al formulario de edicion de producto
- router.put("/editProd/:id", uploadFile.single("imagenProd"),controllerShoes.editShoes)//ruta q edita el formulario y lo carga
+ //router.get("/editProd/:id", controllerShoes.showEditShoes);//ruta al formulario de edicion de producto
+ //router.put("/editProd/:id", uploadFile.single("imagenProd"),controllerShoes.editShoes)//ruta q edita el formulario y lo carga
 
 // /*DELETE */
- router.delete("/:id",controllerShoes.deleteShoes);
+ //router.delete("/:id",controllerShoes.deleteShoes);
 
 /*LOGIN user*/
-router.get('/login',controllerUser.loginUser);//ruta a la pagina de login
+router.get('/login',controllerUser.loginIn);
+router.post('/login',controllerUser.loginUsers);//ruta a la pagina de login
 
 
 
 /*REGISTER user*/
 
-router.get('/register',controllerUser.registerUser);//ruta a la pagina de registro
-router.post('/register',uploadFile.single('perfil'),validations,controllerUser.createUser);//carga de datos de usuario
+router.get('/register',controllerUser.registerUsers);//ruta a la pagina de registro
+router.post('/register',uploadFile.single('perfil'),validations,controllerUser.createUsers);//carga de datos de usuario
 
 
 

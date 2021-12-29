@@ -1,9 +1,27 @@
 const db = require('../database/models');
 const path = require("path");
+const bcryptjs = require('bcryptjs')
 
 
 
 const userModel = {
+
+    loginUser: async (email)=>{
+        try {
+            
+                const response = await db.clientes.findOne({
+                    where: {
+                        email: email
+                    }
+                })
+                return response;
+    
+        } catch (error) {
+            console.log(`fallo la consulta a la DBUser ${error.message}`);
+            return []
+        }
+        
+    },
     getUser : async ()=>{
         try {
             const response = await db.clientes.findAll()
@@ -16,13 +34,15 @@ const userModel = {
     },
     createUser : async (cliente)=>{
         try {
+            const passwordHashed = bcryptjs.hashSync(cliente.password, 10);
             const response = await db.clientes.create(
+
                 {
                     idclientes: cliente.idclientes,
                     email: cliente.email,
-                    password: cliente.password,
+                    password: passwordHashed,
                     username: cliente.username,
-                    perfil: `images/perfil/${cliente.file.filename}`,
+                    perfil: `images/perfil/${cliente.perfil}`,
                 }
             );
             return response
@@ -34,7 +54,7 @@ const userModel = {
     },
     deleteUser : async (id)=>{
         try {
-            const response = await dbUser.clientes.destroy({
+            const response = await db.clientes.destroy({
                     where:{
                         idclientes:id,
                     }
@@ -48,7 +68,7 @@ const userModel = {
     },
     updateUser : async (cliente)=>{
         try {
-            const response = await dbUser.clientes.create(
+            const response = await db.clientes.create(
                 {
                     idclientes: cliente.idclientes,
                     email: cliente.email,

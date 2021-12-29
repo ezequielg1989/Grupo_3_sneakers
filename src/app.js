@@ -7,7 +7,6 @@ const routesMain = require("./routes/main.routes");
 const routesAdmin = require("./routes/admin.routes");
 const indexRouter = require("./routes/index");
 
-const PORT = process.env.PORT || 3002;
 
 app.use(
   session({

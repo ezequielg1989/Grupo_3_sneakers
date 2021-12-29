@@ -1,15 +1,48 @@
 const {userModel} = require('../model')
-
+const bcryptjs = require('bcryptjs')
+const session = require('express-session')
 
 
 const usersController = {
     
+    loginIn :async (req,res,next)=>{
+        try {
+         res.render('login')
+        } catch (error) {
+            
+        }
+     },
     
-    loginUser: async (req,res,next)=>{
+    loginUsers: async (req,res,next)=>{
        try {
-        res.render('login')
-       } catch (error) {
-           
+            console.log(req.body.email);
+            const response = await userModel.loginUser(req.body.email);
+            
+            if(response) { 
+                req.session.userLogged = response;
+                
+                if(req.body.remember) {
+                    res.cookie('email', req.body.email, {maxAge : (1000 * 60) * 3})
+                }
+                
+                const passwordOK =  bcryptjs.compareSync(req.body.password, response.password);
+                if(passwordOK) {
+                    res.redirect('/')
+                } else {
+                    res.redirect('login')
+                }
+                 
+            } else {
+                return res.render('login', {
+                    errors: {
+                        email: {
+                            msg: "Credenciales Invalidas",
+                        },
+                    },
+                });
+            }
+       } catch (error) {     
+     
        }
     },
     getUsers: async (req,res,next)=>{
@@ -23,22 +56,25 @@ const usersController = {
 
 
     },
-    registerUser: async (req,res,next)=>{
+    registerUsers: async (req,res,next)=>{
        try {
         res.render('register')
        } catch (error) {
            
        }
     },
-    createUser: async (req,res,next)=>{
+    createUsers: async (req,res,next)=>{
         try {
             const body = req.body;
             const usuario = await userModel.createUser(body);
-            console.log(usuario);
+            if(usuario){
+                res.redirect('/')
+                
+            }
         } catch (error) {
             
         }
-        res.redirect('register')
+        
 
 
     },

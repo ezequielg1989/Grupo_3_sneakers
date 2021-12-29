@@ -10,6 +10,17 @@ const shoesController = {
         } catch (error) {
             
         }
+    },
+    shoes: async (req,res,next)=>{
+        try {
+            const response = await shoeModel.shoe(req.params.id);
+            console.log("hola");
+            console.log(response);
+            console.log("chau");
+            res.render('details',{producto:response})
+        } catch (error) {
+            
+        }
        
 
 

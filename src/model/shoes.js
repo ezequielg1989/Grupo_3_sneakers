@@ -4,6 +4,22 @@ const path = require("path");
 
 const shoeModel = {
 
+    shoe :  async (idshoes)=>{
+        try {
+            const response = await db.shoes.findOne({
+                where: {
+                    idshoes:idshoes 
+                }
+            })
+            return response;
+            
+        } catch (error) {
+            console.log(`fallo la consulta a la DBshoes ${error.message}`);
+            return []
+        }
+        
+    },
+
     getShoe : async ()=>{
         try {
             const response = await db.shoes.findAll()
