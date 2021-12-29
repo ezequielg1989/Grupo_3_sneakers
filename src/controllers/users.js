@@ -15,22 +15,32 @@ const usersController = {
     
     loginUsers: async (req,res,next)=>{
        try {
-            console.log(req.body.email);
-            const response = await userModel.loginUser(req.body.email);
-            
+            let response = await userModel.loginUser(req.body.email);
+           
             if(response) { 
                 req.session.userLogged = response;
-                
+              
                 if(req.body.remember) {
                     res.cookie('email', req.body.email, {maxAge : (1000 * 60) * 3})
                 }
                 
-                const passwordOK =  bcryptjs.compareSync(req.body.password, response.password);
+                let passwordOK =  bcryptjs.compareSync(req.body.password, response.password);
+                
                 if(passwordOK) {
-                    res.redirect('/')
-                } else {
-                    res.redirect('login')
-                }
+                    if(response.role == 'admin') {
+                        res.redirect('/prodAdmin')
+                    } else {
+                        res.redirect('/profile')
+                    }
+                }else {
+                    return res.render('login', {
+                        errors: {
+                            email: {
+                                msg: "Credenciales Invalidas",
+                            },
+                        },
+                    });
+                } 
                  
             } else {
                 return res.render('login', {
@@ -45,10 +55,19 @@ const usersController = {
      
        }
     },
+    logout: (req, res) => {
+            res.clearCookie('userEmail');
+            req.session.destroy();
+            console.log(req.session);
+            return res.redirect('/');
+        
+    },
     getUsers: async (req,res,next)=>{
         try {
-            const response = await userModel.getUser();
-            res.render('listUsers',{clientes:response})
+            let user = req.session.userLogged;
+            const response = await userModel.getUser(user.email);
+            
+            res.render('profile',{cliente:response})
         } catch (error) {
             
         }

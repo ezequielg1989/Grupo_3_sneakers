@@ -5,13 +5,28 @@
 <%- include('partials/head') %>
 
 <body>
-      
-    <h2><%= user.username %></h2>
-    
-    <div class="img-profile">
-        <img  src="../images/perfil/<%= user.perfil %> "alt="" width="200px" >
+    <%- include('partials/header') %>
+
+    <div class="profile">
+
+        <div class="img-profile">
+            <img  src="../images/perfil/<%= cliente.perfil %> "alt="" width="200px" >
+        </div>
+        
+        <h2><%= cliente.username %></h2>
+        <br>
+        <div><%= cliente.perfil %></div>
+        <br>
+        <div><%= cliente.email %></div>
+        
+        <div class="card-button">
+            <button class="bottom-product">
+                <a href="/logout">Cerrar Sesion</a>
+            </button>
+        </div>
+        
     </div>
-    
-    <div><%= user.email %></div>
-    <div><%= user.perfil %></div>
+    <%- include('partials/footer.ejs') %>
 </body>
+
+</html>

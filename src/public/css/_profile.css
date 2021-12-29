@@ -6,3 +6,26 @@ body {
 .img-profile{
     max-width: 200px;
 }
+.profile{
+    display:flex;
+    margin-top: 16%;
+    margin-left:15%;
+    padding-top: 7px;
+    transition: 0.4s;
+    border-radius: 10px;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    align-content:center;
+}
+.bottom-product {
+    margin-top:20px;
+    margin-right: 15px;
+    font-family: 'Bebas Neue', cursive;
+    background-color:white;
+    color:black;
+    font-size: 18px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10%;
+    transition: 0.4s;
+}

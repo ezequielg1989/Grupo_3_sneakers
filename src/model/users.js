@@ -22,11 +22,18 @@ const userModel = {
         }
         
     },
-    getUser : async ()=>{
+    getUser: async (email)=>{
         try {
-            const response = await db.clientes.findAll()
-            return response
+            
+                const response = await db.clientes.findOne({
+                    where: {
+                        email: email
+                    }
+                })
+                return response;
+    
         } catch (error) {
+            
             console.log(`fallo la consulta a la DBUser ${error.message}`);
             return []
         }
